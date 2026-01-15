@@ -1,0 +1,2409 @@
+{
+  "models\\checkpoint_20260115_114800.pkl": {
+    "timestamp": "2026-01-15T11:48:00.718712",
+    "states": 3873,
+    "epsilon": 0.024610108329570633,
+    "metadata": {
+      "episode": 5000,
+      "total_episodes": 5000,
+      "win_rate": 56.92,
+      "training_time": 1.3079476356506348
+    }
+  },
+  "models\\q_table.pkl": {
+    "timestamp": "2026-01-15T16:45:38.760974",
+    "states": 4518,
+    "epsilon": 0.01,
+    "metadata": {
+      "total_episodes": 85000,
+      "final_win_rate": 95.38705882352942,
+      "final_draw_rate": 1.4470588235294117,
+      "final_loss_rate": 3.1658823529411766,
+      "training_time": 73.07124519348145,
+      "hyperparameters": {
+        "alpha": 0.15,
+        "gamma": 0.92,
+        "epsilon_start": 1.0,
+        "epsilon_final": 0.01,
+        "epsilon_min": 0.01,
+        "epsilon_decay": 0.991
+      },
+      "performance": {
+        "states_learned": 4518,
+        "avg_reward": 0.9222117647058824,
+        "avg_moves": 6.019
+      }
+    }
+  },
+  "models\\checkpoint_20260115_114913.pkl": {
+    "timestamp": "2026-01-15T11:49:13.117276",
+    "states": 3950,
+    "epsilon": 0.024610108329570633,
+    "metadata": {
+      "episode": 5000,
+      "total_episodes": 5000,
+      "win_rate": 56.68,
+      "training_time": 1.3691692352294922
+    }
+  },
+  "models\\checkpoint_20260115_114917.pkl": {
+    "timestamp": "2026-01-15T11:49:17.021202",
+    "states": 3972,
+    "epsilon": 0.024610108329570633,
+    "metadata": {
+      "episode": 5000,
+      "total_episodes": 5000,
+      "win_rate": 52.42,
+      "training_time": 1.3061401844024658
+    }
+  },
+  "models\\checkpoint_20260115_115202.pkl": {
+    "timestamp": "2026-01-15T11:52:02.081103",
+    "states": 3900,
+    "epsilon": 0.024610108329570633,
+    "metadata": {
+      "episode": 5000,
+      "total_episodes": 5000,
+      "win_rate": 55.22,
+      "training_time": 1.396376609802246
+    }
+  },
+  "models\\checkpoint_20260115_115824.pkl": {
+    "timestamp": "2026-01-15T11:58:24.956106",
+    "states": 4031,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 3000,
+      "total_episodes": 8000,
+      "win_rate": 62.866666666666674,
+      "training_time": 1.137333869934082
+    }
+  },
+  "models\\checkpoint_20260115_115825.pkl": {
+    "timestamp": "2026-01-15T11:58:25.812540",
+    "states": 4096,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 5000,
+      "total_episodes": 8000,
+      "win_rate": 63.480000000000004,
+      "training_time": 1.999802827835083
+    }
+  },
+  "models\\checkpoint_20260115_115826.pkl": {
+    "timestamp": "2026-01-15T11:58:26.683210",
+    "states": 4129,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 7000,
+      "total_episodes": 8000,
+      "win_rate": 63.37142857142857,
+      "training_time": 2.869415760040283
+    }
+  },
+  "models\\checkpoint_20260115_115827.pkl": {
+    "timestamp": "2026-01-15T11:58:27.126511",
+    "states": 4141,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 8000,
+      "total_episodes": 8000,
+      "win_rate": 63.5125,
+      "training_time": 3.314297914505005
+    }
+  },
+  "models\\checkpoint_20260115_120636.pkl": {
+    "timestamp": "2026-01-15T12:06:36.756845",
+    "states": 4176,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 3000,
+      "total_episodes": 15000,
+      "win_rate": 63.4,
+      "training_time": 1.0172462463378906
+    }
+  },
+  "models\\checkpoint_20260115_120637.pkl": {
+    "timestamp": "2026-01-15T12:06:37.897188",
+    "states": 4186,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 6000,
+      "total_episodes": 15000,
+      "win_rate": 64.41666666666667,
+      "training_time": 2.1601974964141846
+    }
+  },
+  "models\\checkpoint_20260115_120638.pkl": {
+    "timestamp": "2026-01-15T12:06:38.645218",
+    "states": 4192,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 8000,
+      "total_episodes": 15000,
+      "win_rate": 63.975,
+      "training_time": 2.906745195388794
+    }
+  },
+  "models\\checkpoint_20260115_120639.pkl": {
+    "timestamp": "2026-01-15T12:06:39.961675",
+    "states": 4204,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 11000,
+      "total_episodes": 15000,
+      "win_rate": 63.79090909090909,
+      "training_time": 4.2250449657440186
+    }
+  },
+  "models\\checkpoint_20260115_120640.pkl": {
+    "timestamp": "2026-01-15T12:06:40.876169",
+    "states": 4210,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 13000,
+      "total_episodes": 15000,
+      "win_rate": 63.63076923076923,
+      "training_time": 5.136388063430786
+    }
+  },
+  "models\\checkpoint_20260115_120641.pkl": {
+    "timestamp": "2026-01-15T12:06:41.837478",
+    "states": 4229,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 15000,
+      "total_episodes": 15000,
+      "win_rate": 63.83333333333333,
+      "training_time": 6.10028338432312
+    }
+  },
+  "models\\checkpoint_20260115_123037.pkl": {
+    "timestamp": "2026-01-15T12:30:37.827871",
+    "states": 4243,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 3000,
+      "total_episodes": 80000,
+      "win_rate": 63.96666666666667,
+      "training_time": 1.0407953262329102
+    }
+  },
+  "models\\checkpoint_20260115_123038.pkl": {
+    "timestamp": "2026-01-15T12:30:38.622190",
+    "states": 4250,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 5000,
+      "total_episodes": 80000,
+      "win_rate": 64.42,
+      "training_time": 1.830902338027954
+    }
+  },
+  "models\\checkpoint_20260115_123039.pkl": {
+    "timestamp": "2026-01-15T12:30:39.774884",
+    "states": 4263,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 8000,
+      "total_episodes": 80000,
+      "win_rate": 64.4125,
+      "training_time": 2.9882071018218994
+    }
+  },
+  "models\\checkpoint_20260115_123040.pkl": {
+    "timestamp": "2026-01-15T12:30:40.961835",
+    "states": 4279,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 11000,
+      "total_episodes": 80000,
+      "win_rate": 64.54545454545455,
+      "training_time": 4.175945281982422
+    }
+  },
+  "models\\checkpoint_20260115_123041.pkl": {
+    "timestamp": "2026-01-15T12:30:41.722599",
+    "states": 4281,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 13000,
+      "total_episodes": 80000,
+      "win_rate": 64.41538461538462,
+      "training_time": 4.930259466171265
+    }
+  },
+  "models\\checkpoint_20260115_123042.pkl": {
+    "timestamp": "2026-01-15T12:30:42.654207",
+    "states": 4283,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 15000,
+      "total_episodes": 80000,
+      "win_rate": 64.68,
+      "training_time": 5.864938735961914
+    }
+  },
+  "models\\checkpoint_20260115_123043.pkl": {
+    "timestamp": "2026-01-15T12:30:43.873615",
+    "states": 4290,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 18000,
+      "total_episodes": 80000,
+      "win_rate": 65.2,
+      "training_time": 7.086833477020264
+    }
+  },
+  "models\\checkpoint_20260115_123044.pkl": {
+    "timestamp": "2026-01-15T12:30:44.658281",
+    "states": 4293,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 20000,
+      "total_episodes": 80000,
+      "win_rate": 65.255,
+      "training_time": 7.871221542358398
+    }
+  },
+  "models\\checkpoint_20260115_123045.pkl": {
+    "timestamp": "2026-01-15T12:30:45.803656",
+    "states": 4304,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 23000,
+      "total_episodes": 80000,
+      "win_rate": 65.25652173913043,
+      "training_time": 9.018304109573364
+    }
+  },
+  "models\\checkpoint_20260115_123046.pkl": {
+    "timestamp": "2026-01-15T12:30:47.001912",
+    "states": 4315,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 26000,
+      "total_episodes": 80000,
+      "win_rate": 65.22307692307693,
+      "training_time": 10.216113567352295
+    }
+  },
+  "models\\checkpoint_20260115_123047.pkl": {
+    "timestamp": "2026-01-15T12:30:47.929962",
+    "states": 4318,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 28000,
+      "total_episodes": 80000,
+      "win_rate": 65.46071428571429,
+      "training_time": 11.143660545349121
+    }
+  },
+  "models\\checkpoint_20260115_123048.pkl": {
+    "timestamp": "2026-01-15T12:30:48.728876",
+    "states": 4320,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 30000,
+      "total_episodes": 80000,
+      "win_rate": 65.48,
+      "training_time": 11.942578792572021
+    }
+  },
+  "models\\checkpoint_20260115_123049.pkl": {
+    "timestamp": "2026-01-15T12:30:49.879413",
+    "states": 4328,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 33000,
+      "total_episodes": 80000,
+      "win_rate": 65.52424242424243,
+      "training_time": 13.084445238113403
+    }
+  },
+  "models\\checkpoint_20260115_123050.pkl": {
+    "timestamp": "2026-01-15T12:30:50.664101",
+    "states": 4331,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 35000,
+      "total_episodes": 80000,
+      "win_rate": 65.59142857142857,
+      "training_time": 13.875959873199463
+    }
+  },
+  "models\\checkpoint_20260115_123051.pkl": {
+    "timestamp": "2026-01-15T12:30:51.866786",
+    "states": 4332,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 38000,
+      "total_episodes": 80000,
+      "win_rate": 65.71578947368421,
+      "training_time": 15.07727575302124
+    }
+  },
+  "models\\checkpoint_20260115_123052.pkl": {
+    "timestamp": "2026-01-15T12:30:52.924737",
+    "states": 4335,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 40000,
+      "total_episodes": 80000,
+      "win_rate": 65.77,
+      "training_time": 16.135165214538574
+    }
+  },
+  "models\\checkpoint_20260115_123053.pkl": {
+    "timestamp": "2026-01-15T12:30:53.778488",
+    "states": 4335,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 42000,
+      "total_episodes": 80000,
+      "win_rate": 65.75238095238095,
+      "training_time": 16.992201805114746
+    }
+  },
+  "models\\checkpoint_20260115_123054.pkl": {
+    "timestamp": "2026-01-15T12:30:54.627530",
+    "states": 4337,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 44000,
+      "total_episodes": 80000,
+      "win_rate": 65.77499999999999,
+      "training_time": 17.84098219871521
+    }
+  },
+  "models\\checkpoint_20260115_123055.pkl": {
+    "timestamp": "2026-01-15T12:30:55.879919",
+    "states": 4339,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 47000,
+      "total_episodes": 80000,
+      "win_rate": 65.86170212765957,
+      "training_time": 19.091106414794922
+    }
+  },
+  "models\\checkpoint_20260115_123056.pkl": {
+    "timestamp": "2026-01-15T12:30:56.656386",
+    "states": 4346,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 49000,
+      "total_episodes": 80000,
+      "win_rate": 65.89795918367346,
+      "training_time": 19.871113538742065
+    }
+  },
+  "models\\checkpoint_20260115_123057.pkl": {
+    "timestamp": "2026-01-15T12:30:57.911594",
+    "states": 4349,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 52000,
+      "total_episodes": 80000,
+      "win_rate": 66.0,
+      "training_time": 21.12326431274414
+    }
+  },
+  "models\\checkpoint_20260115_123058.pkl": {
+    "timestamp": "2026-01-15T12:30:58.808782",
+    "states": 4350,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 54000,
+      "total_episodes": 80000,
+      "win_rate": 66.13518518518518,
+      "training_time": 22.022472381591797
+    }
+  },
+  "models\\checkpoint_20260115_123059.pkl": {
+    "timestamp": "2026-01-15T12:30:59.730845",
+    "states": 4351,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 56000,
+      "total_episodes": 80000,
+      "win_rate": 66.17857142857143,
+      "training_time": 22.940390825271606
+    }
+  },
+  "models\\checkpoint_20260115_123100.pkl": {
+    "timestamp": "2026-01-15T12:31:00.959030",
+    "states": 4353,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 59000,
+      "total_episodes": 80000,
+      "win_rate": 66.28474576271186,
+      "training_time": 24.172720670700073
+    }
+  },
+  "models\\checkpoint_20260115_123101.pkl": {
+    "timestamp": "2026-01-15T12:31:01.778109",
+    "states": 4355,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 61000,
+      "total_episodes": 80000,
+      "win_rate": 66.36229508196722,
+      "training_time": 24.992537260055542
+    }
+  },
+  "models\\checkpoint_20260115_123102.pkl": {
+    "timestamp": "2026-01-15T12:31:02.657449",
+    "states": 4357,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 63000,
+      "total_episodes": 80000,
+      "win_rate": 66.44761904761904,
+      "training_time": 25.872305393218994
+    }
+  },
+  "models\\checkpoint_20260115_123103.pkl": {
+    "timestamp": "2026-01-15T12:31:03.907119",
+    "states": 4359,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 66000,
+      "total_episodes": 80000,
+      "win_rate": 66.49242424242424,
+      "training_time": 27.111279487609863
+    }
+  },
+  "models\\checkpoint_20260115_123104.pkl": {
+    "timestamp": "2026-01-15T12:31:04.784660",
+    "states": 4359,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 68000,
+      "total_episodes": 80000,
+      "win_rate": 66.56617647058823,
+      "training_time": 27.99311065673828
+    }
+  },
+  "models\\checkpoint_20260115_123105.pkl": {
+    "timestamp": "2026-01-15T12:31:05.710101",
+    "states": 4363,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 70000,
+      "total_episodes": 80000,
+      "win_rate": 66.61857142857143,
+      "training_time": 28.923640727996826
+    }
+  },
+  "models\\checkpoint_20260115_123106.pkl": {
+    "timestamp": "2026-01-15T12:31:06.542517",
+    "states": 4366,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 72000,
+      "total_episodes": 80000,
+      "win_rate": 66.63333333333334,
+      "training_time": 29.75020933151245
+    }
+  },
+  "models\\checkpoint_20260115_123107.pkl": {
+    "timestamp": "2026-01-15T12:31:07.991873",
+    "states": 4370,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 75000,
+      "total_episodes": 80000,
+      "win_rate": 66.72,
+      "training_time": 31.20261001586914
+    }
+  },
+  "models\\checkpoint_20260115_123108.pkl": {
+    "timestamp": "2026-01-15T12:31:08.955305",
+    "states": 4374,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 77000,
+      "total_episodes": 80000,
+      "win_rate": 66.75194805194805,
+      "training_time": 32.165857791900635
+    }
+  },
+  "models\\checkpoint_20260115_123109.pkl": {
+    "timestamp": "2026-01-15T12:31:09.485845",
+    "states": 4374,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 78000,
+      "total_episodes": 80000,
+      "win_rate": 66.74230769230769,
+      "training_time": 32.69654583930969
+    }
+  },
+  "models\\checkpoint_20260115_123110.pkl": {
+    "timestamp": "2026-01-15T12:31:10.568196",
+    "states": 4376,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 80000,
+      "total_episodes": 80000,
+      "win_rate": 66.74875,
+      "training_time": 33.77930998802185
+    }
+  },
+  "models\\checkpoint_20260115_123512.pkl": {
+    "timestamp": "2026-01-15T12:35:12.626935",
+    "states": 4377,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 2000,
+      "total_episodes": 80000,
+      "win_rate": 68.5,
+      "training_time": 0.8148128986358643
+    }
+  },
+  "models\\checkpoint_20260115_123513.pkl": {
+    "timestamp": "2026-01-15T12:35:13.687608",
+    "states": 4380,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 4000,
+      "total_episodes": 80000,
+      "win_rate": 68.10000000000001,
+      "training_time": 1.8748619556427002
+    }
+  },
+  "models\\checkpoint_20260115_123514.pkl": {
+    "timestamp": "2026-01-15T12:35:14.645121",
+    "states": 4380,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 6000,
+      "total_episodes": 80000,
+      "win_rate": 67.05,
+      "training_time": 2.8361446857452393
+    }
+  },
+  "models\\checkpoint_20260115_123515.pkl": {
+    "timestamp": "2026-01-15T12:35:15.695860",
+    "states": 4380,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 8000,
+      "total_episodes": 80000,
+      "win_rate": 66.4625,
+      "training_time": 3.8854074478149414
+    }
+  },
+  "models\\checkpoint_20260115_123516.pkl": {
+    "timestamp": "2026-01-15T12:35:16.795531",
+    "states": 4381,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 10000,
+      "total_episodes": 80000,
+      "win_rate": 66.25,
+      "training_time": 4.985793590545654
+    }
+  },
+  "models\\checkpoint_20260115_123517.pkl": {
+    "timestamp": "2026-01-15T12:35:17.954864",
+    "states": 4384,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 12000,
+      "total_episodes": 80000,
+      "win_rate": 66.25833333333333,
+      "training_time": 6.144883155822754
+    }
+  },
+  "models\\checkpoint_20260115_123518.pkl": {
+    "timestamp": "2026-01-15T12:35:18.485887",
+    "states": 4384,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 13000,
+      "total_episodes": 80000,
+      "win_rate": 66.31538461538462,
+      "training_time": 6.66798210144043
+    }
+  },
+  "models\\checkpoint_20260115_123519.pkl": {
+    "timestamp": "2026-01-15T12:35:19.562576",
+    "states": 4387,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 15000,
+      "total_episodes": 80000,
+      "win_rate": 66.49333333333334,
+      "training_time": 7.741316556930542
+    }
+  },
+  "models\\checkpoint_20260115_123520.pkl": {
+    "timestamp": "2026-01-15T12:35:20.686581",
+    "states": 4391,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 17000,
+      "total_episodes": 80000,
+      "win_rate": 66.55882352941175,
+      "training_time": 8.877114295959473
+    }
+  },
+  "models\\checkpoint_20260115_123521.pkl": {
+    "timestamp": "2026-01-15T12:35:22.009058",
+    "states": 4395,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 19000,
+      "total_episodes": 80000,
+      "win_rate": 66.51052631578948,
+      "training_time": 10.197083950042725
+    }
+  },
+  "models\\checkpoint_20260115_123522.pkl": {
+    "timestamp": "2026-01-15T12:35:22.628087",
+    "states": 4395,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 20000,
+      "total_episodes": 80000,
+      "win_rate": 66.46,
+      "training_time": 10.810031652450562
+    }
+  },
+  "models\\checkpoint_20260115_123523.pkl": {
+    "timestamp": "2026-01-15T12:35:23.471652",
+    "states": 4395,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 21000,
+      "total_episodes": 80000,
+      "win_rate": 66.44285714285715,
+      "training_time": 11.660141706466675
+    }
+  },
+  "models\\checkpoint_20260115_123524.pkl": {
+    "timestamp": "2026-01-15T12:35:24.670537",
+    "states": 4396,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 23000,
+      "total_episodes": 80000,
+      "win_rate": 66.4,
+      "training_time": 12.858743906021118
+    }
+  },
+  "models\\checkpoint_20260115_123525.pkl": {
+    "timestamp": "2026-01-15T12:35:25.992181",
+    "states": 4396,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 25000,
+      "total_episodes": 80000,
+      "win_rate": 66.28,
+      "training_time": 14.176262617111206
+    }
+  },
+  "models\\checkpoint_20260115_123526.pkl": {
+    "timestamp": "2026-01-15T12:35:26.597501",
+    "states": 4396,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 26000,
+      "total_episodes": 80000,
+      "win_rate": 66.3,
+      "training_time": 14.78403925895691
+    }
+  },
+  "models\\checkpoint_20260115_123527.pkl": {
+    "timestamp": "2026-01-15T12:35:27.204166",
+    "states": 4396,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 27000,
+      "total_episodes": 80000,
+      "win_rate": 66.25925925925927,
+      "training_time": 15.39191484451294
+    }
+  },
+  "models\\checkpoint_20260115_123528.pkl": {
+    "timestamp": "2026-01-15T12:35:28.633907",
+    "states": 4396,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 29000,
+      "total_episodes": 80000,
+      "win_rate": 66.20344827586206,
+      "training_time": 16.8217990398407
+    }
+  },
+  "models\\checkpoint_20260115_123529.pkl": {
+    "timestamp": "2026-01-15T12:35:29.653557",
+    "states": 4398,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 31000,
+      "total_episodes": 80000,
+      "win_rate": 66.0741935483871,
+      "training_time": 17.84208869934082
+    }
+  },
+  "models\\checkpoint_20260115_123530.pkl": {
+    "timestamp": "2026-01-15T12:35:30.628077",
+    "states": 4399,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 33000,
+      "total_episodes": 80000,
+      "win_rate": 66.02121212121213,
+      "training_time": 18.818623781204224
+    }
+  },
+  "models\\checkpoint_20260115_123531.pkl": {
+    "timestamp": "2026-01-15T12:35:31.748148",
+    "states": 4399,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 35000,
+      "total_episodes": 80000,
+      "win_rate": 65.97714285714285,
+      "training_time": 19.93870186805725
+    }
+  },
+  "models\\checkpoint_20260115_123532.pkl": {
+    "timestamp": "2026-01-15T12:35:32.757937",
+    "states": 4399,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 37000,
+      "total_episodes": 80000,
+      "win_rate": 65.98918918918919,
+      "training_time": 20.946476459503174
+    }
+  },
+  "models\\checkpoint_20260115_123533.pkl": {
+    "timestamp": "2026-01-15T12:35:33.860172",
+    "states": 4404,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 39000,
+      "total_episodes": 80000,
+      "win_rate": 65.98717948717949,
+      "training_time": 22.050925254821777
+    }
+  },
+  "models\\checkpoint_20260115_123534.pkl": {
+    "timestamp": "2026-01-15T12:35:34.975499",
+    "states": 4405,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 41000,
+      "total_episodes": 80000,
+      "win_rate": 65.97073170731707,
+      "training_time": 23.16504669189453
+    }
+  },
+  "models\\checkpoint_20260115_123535.pkl": {
+    "timestamp": "2026-01-15T12:35:35.566744",
+    "states": 4406,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 42000,
+      "total_episodes": 80000,
+      "win_rate": 65.97857142857143,
+      "training_time": 23.756288051605225
+    }
+  },
+  "models\\checkpoint_20260115_123536.pkl": {
+    "timestamp": "2026-01-15T12:35:36.968784",
+    "states": 4409,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 44000,
+      "total_episodes": 80000,
+      "win_rate": 66.0840909090909,
+      "training_time": 25.15830945968628
+    }
+  },
+  "models\\checkpoint_20260115_123537.pkl": {
+    "timestamp": "2026-01-15T12:35:37.835132",
+    "states": 4409,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 45000,
+      "total_episodes": 80000,
+      "win_rate": 66.03777777777778,
+      "training_time": 26.022642135620117
+    }
+  },
+  "models\\checkpoint_20260115_123538.pkl": {
+    "timestamp": "2026-01-15T12:35:38.503605",
+    "states": 4409,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 46000,
+      "total_episodes": 80000,
+      "win_rate": 65.99565217391304,
+      "training_time": 26.68790364265442
+    }
+  },
+  "models\\checkpoint_20260115_123539.pkl": {
+    "timestamp": "2026-01-15T12:35:39.655134",
+    "states": 4409,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 48000,
+      "total_episodes": 80000,
+      "win_rate": 65.99791666666667,
+      "training_time": 27.84515404701233
+    }
+  },
+  "models\\checkpoint_20260115_123540.pkl": {
+    "timestamp": "2026-01-15T12:35:40.888446",
+    "states": 4409,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 50000,
+      "total_episodes": 80000,
+      "win_rate": 65.99199999999999,
+      "training_time": 29.072691917419434
+    }
+  },
+  "models\\checkpoint_20260115_123541.pkl": {
+    "timestamp": "2026-01-15T12:35:41.495801",
+    "states": 4409,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 51000,
+      "total_episodes": 80000,
+      "win_rate": 66.0235294117647,
+      "training_time": 29.678786516189575
+    }
+  },
+  "models\\checkpoint_20260115_123542.pkl": {
+    "timestamp": "2026-01-15T12:35:42.809209",
+    "states": 4410,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 53000,
+      "total_episodes": 80000,
+      "win_rate": 66.0433962264151,
+      "training_time": 30.994717597961426
+    }
+  },
+  "models\\checkpoint_20260115_123543.pkl": {
+    "timestamp": "2026-01-15T12:35:43.938172",
+    "states": 4412,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 55000,
+      "total_episodes": 80000,
+      "win_rate": 66.01818181818182,
+      "training_time": 32.12773585319519
+    }
+  },
+  "models\\checkpoint_20260115_123544.pkl": {
+    "timestamp": "2026-01-15T12:35:44.465521",
+    "states": 4412,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 56000,
+      "total_episodes": 80000,
+      "win_rate": 65.96785714285714,
+      "training_time": 32.65406036376953
+    }
+  },
+  "models\\checkpoint_20260115_123545.pkl": {
+    "timestamp": "2026-01-15T12:35:45.625788",
+    "states": 4412,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 58000,
+      "total_episodes": 80000,
+      "win_rate": 66.02413793103449,
+      "training_time": 33.81548810005188
+    }
+  },
+  "models\\checkpoint_20260115_123546.pkl": {
+    "timestamp": "2026-01-15T12:35:46.788629",
+    "states": 4414,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 60000,
+      "total_episodes": 80000,
+      "win_rate": 66.03833333333333,
+      "training_time": 34.969200134277344
+    }
+  },
+  "models\\checkpoint_20260115_123547.pkl": {
+    "timestamp": "2026-01-15T12:35:47.401928",
+    "states": 4414,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 61000,
+      "total_episodes": 80000,
+      "win_rate": 66.06229508196722,
+      "training_time": 35.59048008918762
+    }
+  },
+  "models\\checkpoint_20260115_123548.pkl": {
+    "timestamp": "2026-01-15T12:35:48.680152",
+    "states": 4415,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 63000,
+      "total_episodes": 80000,
+      "win_rate": 66.05238095238096,
+      "training_time": 36.869690895080566
+    }
+  },
+  "models\\checkpoint_20260115_123549.pkl": {
+    "timestamp": "2026-01-15T12:35:49.853054",
+    "states": 4415,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 65000,
+      "total_episodes": 80000,
+      "win_rate": 66.05230769230769,
+      "training_time": 38.032029151916504
+    }
+  },
+  "models\\checkpoint_20260115_123550.pkl": {
+    "timestamp": "2026-01-15T12:35:50.453695",
+    "states": 4415,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 66000,
+      "total_episodes": 80000,
+      "win_rate": 66.05757575757576,
+      "training_time": 38.641302824020386
+    }
+  },
+  "models\\checkpoint_20260115_123551.pkl": {
+    "timestamp": "2026-01-15T12:35:51.693004",
+    "states": 4415,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 68000,
+      "total_episodes": 80000,
+      "win_rate": 66.04117647058824,
+      "training_time": 39.8825101852417
+    }
+  },
+  "models\\checkpoint_20260115_123552.pkl": {
+    "timestamp": "2026-01-15T12:35:52.426841",
+    "states": 4416,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 69000,
+      "total_episodes": 80000,
+      "win_rate": 66.05797101449275,
+      "training_time": 40.61622929573059
+    }
+  },
+  "models\\checkpoint_20260115_123553.pkl": {
+    "timestamp": "2026-01-15T12:35:53.994526",
+    "states": 4417,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 71000,
+      "total_episodes": 80000,
+      "win_rate": 66.07605633802817,
+      "training_time": 42.173303842544556
+    }
+  },
+  "models\\checkpoint_20260115_123554.pkl": {
+    "timestamp": "2026-01-15T12:35:54.695388",
+    "states": 4418,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 72000,
+      "total_episodes": 80000,
+      "win_rate": 66.09583333333333,
+      "training_time": 42.87749099731445
+    }
+  },
+  "models\\checkpoint_20260115_123555.pkl": {
+    "timestamp": "2026-01-15T12:35:55.436327",
+    "states": 4418,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 73000,
+      "total_episodes": 80000,
+      "win_rate": 66.08493150684932,
+      "training_time": 43.621366024017334
+    }
+  },
+  "models\\checkpoint_20260115_123556.pkl": {
+    "timestamp": "2026-01-15T12:35:56.893892",
+    "states": 4418,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 75000,
+      "total_episodes": 80000,
+      "win_rate": 66.05066666666667,
+      "training_time": 45.077564001083374
+    }
+  },
+  "models\\checkpoint_20260115_123557.pkl": {
+    "timestamp": "2026-01-15T12:35:57.591146",
+    "states": 4418,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 76000,
+      "total_episodes": 80000,
+      "win_rate": 66.05657894736842,
+      "training_time": 45.7715322971344
+    }
+  },
+  "models\\checkpoint_20260115_123558.pkl": {
+    "timestamp": "2026-01-15T12:35:58.870043",
+    "states": 4418,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 78000,
+      "total_episodes": 80000,
+      "win_rate": 66.05897435897435,
+      "training_time": 47.059478759765625
+    }
+  },
+  "models\\checkpoint_20260115_123559.pkl": {
+    "timestamp": "2026-01-15T12:35:59.611748",
+    "states": 4418,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 79000,
+      "total_episodes": 80000,
+      "win_rate": 66.04683544303798,
+      "training_time": 47.79570913314819
+    }
+  },
+  "models\\checkpoint_20260115_123600.pkl": {
+    "timestamp": "2026-01-15T12:36:00.348553",
+    "states": 4418,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 80000,
+      "total_episodes": 80000,
+      "win_rate": 66.02875,
+      "training_time": 48.536829233169556
+    }
+  },
+  "models\\model_80000ep_20260115_123600.pkl": {
+    "timestamp": "2026-01-15T12:36:00.615524",
+    "states": 4418,
+    "epsilon": 0.01,
+    "metadata": {
+      "total_episodes": 80000,
+      "final_win_rate": 66.02875,
+      "training_time": 48.6574923992157
+    }
+  },
+  "models\\checkpoint_20260115_124027.pkl": {
+    "timestamp": "2026-01-15T12:40:27.965621",
+    "states": 4419,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 2000,
+      "total_episodes": 150000,
+      "win_rate": 64.9,
+      "training_time": 0.6985857486724854
+    }
+  },
+  "models\\checkpoint_20260115_124028.pkl": {
+    "timestamp": "2026-01-15T12:40:28.800106",
+    "states": 4419,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 4000,
+      "total_episodes": 150000,
+      "win_rate": 66.07499999999999,
+      "training_time": 1.528184175491333
+    }
+  },
+  "models\\checkpoint_20260115_124029.pkl": {
+    "timestamp": "2026-01-15T12:40:29.777332",
+    "states": 4419,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 6000,
+      "total_episodes": 150000,
+      "win_rate": 65.31666666666666,
+      "training_time": 2.5091795921325684
+    }
+  },
+  "models\\checkpoint_20260115_124030.pkl": {
+    "timestamp": "2026-01-15T12:40:31.007616",
+    "states": 4422,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 9000,
+      "total_episodes": 150000,
+      "win_rate": 65.94444444444446,
+      "training_time": 3.7373578548431396
+    }
+  },
+  "models\\checkpoint_20260115_124031.pkl": {
+    "timestamp": "2026-01-15T12:40:31.945237",
+    "states": 4423,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 11000,
+      "total_episodes": 150000,
+      "win_rate": 65.92727272727272,
+      "training_time": 4.676786661148071
+    }
+  },
+  "models\\checkpoint_20260115_124032.pkl": {
+    "timestamp": "2026-01-15T12:40:32.749896",
+    "states": 4425,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 13000,
+      "total_episodes": 150000,
+      "win_rate": 65.93076923076923,
+      "training_time": 5.482675075531006
+    }
+  },
+  "models\\checkpoint_20260115_124033.pkl": {
+    "timestamp": "2026-01-15T12:40:33.598141",
+    "states": 4426,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 15000,
+      "total_episodes": 150000,
+      "win_rate": 65.84666666666666,
+      "training_time": 6.328149795532227
+    }
+  },
+  "models\\checkpoint_20260115_124034.pkl": {
+    "timestamp": "2026-01-15T12:40:34.930731",
+    "states": 4427,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 18000,
+      "total_episodes": 150000,
+      "win_rate": 65.72222222222223,
+      "training_time": 7.661501884460449
+    }
+  },
+  "models\\checkpoint_20260115_124035.pkl": {
+    "timestamp": "2026-01-15T12:40:35.790572",
+    "states": 4428,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 20000,
+      "total_episodes": 150000,
+      "win_rate": 65.765,
+      "training_time": 8.519091367721558
+    }
+  },
+  "models\\checkpoint_20260115_124036.pkl": {
+    "timestamp": "2026-01-15T12:40:36.960223",
+    "states": 4431,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 23000,
+      "total_episodes": 150000,
+      "win_rate": 65.73913043478261,
+      "training_time": 9.692134380340576
+    }
+  },
+  "models\\checkpoint_20260115_124037.pkl": {
+    "timestamp": "2026-01-15T12:40:37.752632",
+    "states": 4434,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 25000,
+      "total_episodes": 150000,
+      "win_rate": 65.744,
+      "training_time": 10.484660148620605
+    }
+  },
+  "models\\checkpoint_20260115_124038.pkl": {
+    "timestamp": "2026-01-15T12:40:38.942375",
+    "states": 4437,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 28000,
+      "total_episodes": 150000,
+      "win_rate": 65.73571428571428,
+      "training_time": 11.675832748413086
+    }
+  },
+  "models\\checkpoint_20260115_124039.pkl": {
+    "timestamp": "2026-01-15T12:40:39.731588",
+    "states": 4437,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 30000,
+      "total_episodes": 150000,
+      "win_rate": 65.82666666666667,
+      "training_time": 12.46262264251709
+    }
+  },
+  "models\\checkpoint_20260115_124040.pkl": {
+    "timestamp": "2026-01-15T12:40:40.716814",
+    "states": 4437,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 32000,
+      "total_episodes": 150000,
+      "win_rate": 65.79374999999999,
+      "training_time": 13.447875022888184
+    }
+  },
+  "models\\checkpoint_20260115_124041.pkl": {
+    "timestamp": "2026-01-15T12:40:41.605122",
+    "states": 4438,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 34000,
+      "total_episodes": 150000,
+      "win_rate": 65.73823529411764,
+      "training_time": 14.337050676345825
+    }
+  },
+  "models\\checkpoint_20260115_124042.pkl": {
+    "timestamp": "2026-01-15T12:40:42.914071",
+    "states": 4439,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 37000,
+      "total_episodes": 150000,
+      "win_rate": 65.71891891891892,
+      "training_time": 15.646537780761719
+    }
+  },
+  "models\\checkpoint_20260115_124043.pkl": {
+    "timestamp": "2026-01-15T12:40:43.731886",
+    "states": 4439,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 39000,
+      "total_episodes": 150000,
+      "win_rate": 65.68717948717949,
+      "training_time": 16.462929487228394
+    }
+  },
+  "models\\checkpoint_20260115_124044.pkl": {
+    "timestamp": "2026-01-15T12:40:44.764349",
+    "states": 4439,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 41000,
+      "total_episodes": 150000,
+      "win_rate": 65.69512195121952,
+      "training_time": 17.497796773910522
+    }
+  },
+  "models\\checkpoint_20260115_124045.pkl": {
+    "timestamp": "2026-01-15T12:40:45.604282",
+    "states": 4440,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 43000,
+      "total_episodes": 150000,
+      "win_rate": 65.70232558139534,
+      "training_time": 18.336827754974365
+    }
+  },
+  "models\\checkpoint_20260115_124046.pkl": {
+    "timestamp": "2026-01-15T12:40:46.887795",
+    "states": 4440,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 46000,
+      "total_episodes": 150000,
+      "win_rate": 65.62391304347827,
+      "training_time": 19.6177499294281
+    }
+  },
+  "models\\checkpoint_20260115_124047.pkl": {
+    "timestamp": "2026-01-15T12:40:47.729800",
+    "states": 4440,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 48000,
+      "total_episodes": 150000,
+      "win_rate": 65.65416666666667,
+      "training_time": 20.45683526992798
+    }
+  },
+  "models\\checkpoint_20260115_124048.pkl": {
+    "timestamp": "2026-01-15T12:40:48.904234",
+    "states": 4440,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 51000,
+      "total_episodes": 150000,
+      "win_rate": 65.60196078431373,
+      "training_time": 21.63475227355957
+    }
+  },
+  "models\\checkpoint_20260115_124049.pkl": {
+    "timestamp": "2026-01-15T12:40:49.722879",
+    "states": 4441,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 53000,
+      "total_episodes": 150000,
+      "win_rate": 65.61320754716982,
+      "training_time": 22.454817533493042
+    }
+  },
+  "models\\checkpoint_20260115_124050.pkl": {
+    "timestamp": "2026-01-15T12:40:50.960799",
+    "states": 4443,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 56000,
+      "total_episodes": 150000,
+      "win_rate": 65.64107142857142,
+      "training_time": 23.69280505180359
+    }
+  },
+  "models\\checkpoint_20260115_124051.pkl": {
+    "timestamp": "2026-01-15T12:40:51.838082",
+    "states": 4445,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 58000,
+      "total_episodes": 150000,
+      "win_rate": 65.63275862068966,
+      "training_time": 24.57092308998108
+    }
+  },
+  "models\\checkpoint_20260115_124052.pkl": {
+    "timestamp": "2026-01-15T12:40:52.641637",
+    "states": 4445,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 60000,
+      "total_episodes": 150000,
+      "win_rate": 65.66666666666666,
+      "training_time": 25.366591930389404
+    }
+  },
+  "models\\checkpoint_20260115_124053.pkl": {
+    "timestamp": "2026-01-15T12:40:53.871188",
+    "states": 4447,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 63000,
+      "total_episodes": 150000,
+      "win_rate": 65.69047619047619,
+      "training_time": 26.602933883666992
+    }
+  },
+  "models\\checkpoint_20260115_124054.pkl": {
+    "timestamp": "2026-01-15T12:40:54.685932",
+    "states": 4448,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 65000,
+      "total_episodes": 150000,
+      "win_rate": 65.65230769230769,
+      "training_time": 27.418479204177856
+    }
+  },
+  "models\\checkpoint_20260115_124055.pkl": {
+    "timestamp": "2026-01-15T12:40:55.943311",
+    "states": 4448,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 68000,
+      "total_episodes": 150000,
+      "win_rate": 65.68823529411765,
+      "training_time": 28.675851821899414
+    }
+  },
+  "models\\checkpoint_20260115_124056.pkl": {
+    "timestamp": "2026-01-15T12:40:56.762361",
+    "states": 4448,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 70000,
+      "total_episodes": 150000,
+      "win_rate": 65.67714285714285,
+      "training_time": 29.495808124542236
+    }
+  },
+  "models\\checkpoint_20260115_124057.pkl": {
+    "timestamp": "2026-01-15T12:40:57.588478",
+    "states": 4448,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 72000,
+      "total_episodes": 150000,
+      "win_rate": 65.7,
+      "training_time": 30.313994884490967
+    }
+  },
+  "models\\checkpoint_20260115_124058.pkl": {
+    "timestamp": "2026-01-15T12:40:58.830146",
+    "states": 4448,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 75000,
+      "total_episodes": 150000,
+      "win_rate": 65.744,
+      "training_time": 31.560894012451172
+    }
+  },
+  "models\\checkpoint_20260115_124059.pkl": {
+    "timestamp": "2026-01-15T12:40:59.649712",
+    "states": 4448,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 77000,
+      "total_episodes": 150000,
+      "win_rate": 65.75714285714285,
+      "training_time": 32.38250231742859
+    }
+  },
+  "models\\checkpoint_20260115_124100.pkl": {
+    "timestamp": "2026-01-15T12:41:00.591894",
+    "states": 4448,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 79000,
+      "total_episodes": 150000,
+      "win_rate": 65.75822784810127,
+      "training_time": 33.3253972530365
+    }
+  },
+  "models\\checkpoint_20260115_124101.pkl": {
+    "timestamp": "2026-01-15T12:41:01.937837",
+    "states": 4449,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 82000,
+      "total_episodes": 150000,
+      "win_rate": 65.79756097560976,
+      "training_time": 34.66969347000122
+    }
+  },
+  "models\\checkpoint_20260115_124102.pkl": {
+    "timestamp": "2026-01-15T12:41:02.841745",
+    "states": 4449,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 84000,
+      "total_episodes": 150000,
+      "win_rate": 65.82619047619048,
+      "training_time": 35.572803020477295
+    }
+  },
+  "models\\checkpoint_20260115_124103.pkl": {
+    "timestamp": "2026-01-15T12:41:03.721265",
+    "states": 4449,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 86000,
+      "total_episodes": 150000,
+      "win_rate": 65.81627906976745,
+      "training_time": 36.449079275131226
+    }
+  },
+  "models\\checkpoint_20260115_124104.pkl": {
+    "timestamp": "2026-01-15T12:41:04.658362",
+    "states": 4449,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 88000,
+      "total_episodes": 150000,
+      "win_rate": 65.80795454545455,
+      "training_time": 37.38391327857971
+    }
+  },
+  "models\\checkpoint_20260115_124105.pkl": {
+    "timestamp": "2026-01-15T12:41:05.995373",
+    "states": 4449,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 91000,
+      "total_episodes": 150000,
+      "win_rate": 65.83956043956044,
+      "training_time": 38.728835582733154
+    }
+  },
+  "models\\checkpoint_20260115_124106.pkl": {
+    "timestamp": "2026-01-15T12:41:06.929484",
+    "states": 4449,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 93000,
+      "total_episodes": 150000,
+      "win_rate": 65.84086021505377,
+      "training_time": 39.66052031517029
+    }
+  },
+  "models\\checkpoint_20260115_124107.pkl": {
+    "timestamp": "2026-01-15T12:41:07.929462",
+    "states": 4449,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 95000,
+      "total_episodes": 150000,
+      "win_rate": 65.83473684210527,
+      "training_time": 40.661497831344604
+    }
+  },
+  "models\\checkpoint_20260115_124108.pkl": {
+    "timestamp": "2026-01-15T12:41:08.875516",
+    "states": 4449,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 97000,
+      "total_episodes": 150000,
+      "win_rate": 65.85670103092784,
+      "training_time": 41.60606288909912
+    }
+  },
+  "models\\checkpoint_20260115_124109.pkl": {
+    "timestamp": "2026-01-15T12:41:09.787318",
+    "states": 4449,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 99000,
+      "total_episodes": 150000,
+      "win_rate": 65.88282828282829,
+      "training_time": 42.51985716819763
+    }
+  },
+  "models\\checkpoint_20260115_124110.pkl": {
+    "timestamp": "2026-01-15T12:41:10.718370",
+    "states": 4451,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 101000,
+      "total_episodes": 150000,
+      "win_rate": 65.87029702970297,
+      "training_time": 43.4491024017334
+    }
+  },
+  "models\\checkpoint_20260115_124111.pkl": {
+    "timestamp": "2026-01-15T12:41:11.669154",
+    "states": 4451,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 103000,
+      "total_episodes": 150000,
+      "win_rate": 65.85728155339807,
+      "training_time": 44.39820337295532
+    }
+  },
+  "models\\checkpoint_20260115_124112.pkl": {
+    "timestamp": "2026-01-15T12:41:12.622584",
+    "states": 4451,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 105000,
+      "total_episodes": 150000,
+      "win_rate": 65.84952380952382,
+      "training_time": 45.35462188720703
+    }
+  },
+  "models\\checkpoint_20260115_124113.pkl": {
+    "timestamp": "2026-01-15T12:41:13.585598",
+    "states": 4452,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 107000,
+      "total_episodes": 150000,
+      "win_rate": 65.81775700934578,
+      "training_time": 46.31814527511597
+    }
+  },
+  "models\\checkpoint_20260115_124114.pkl": {
+    "timestamp": "2026-01-15T12:41:14.959892",
+    "states": 4452,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 110000,
+      "total_episodes": 150000,
+      "win_rate": 65.77181818181819,
+      "training_time": 47.69269132614136
+    }
+  },
+  "models\\checkpoint_20260115_124115.pkl": {
+    "timestamp": "2026-01-15T12:41:15.825619",
+    "states": 4452,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 112000,
+      "total_episodes": 150000,
+      "win_rate": 65.80178571428571,
+      "training_time": 48.559147119522095
+    }
+  },
+  "models\\checkpoint_20260115_124116.pkl": {
+    "timestamp": "2026-01-15T12:41:16.703735",
+    "states": 4452,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 114000,
+      "total_episodes": 150000,
+      "win_rate": 65.79473684210527,
+      "training_time": 49.43576741218567
+    }
+  },
+  "models\\checkpoint_20260115_124117.pkl": {
+    "timestamp": "2026-01-15T12:41:17.728739",
+    "states": 4453,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 116000,
+      "total_episodes": 150000,
+      "win_rate": 65.76637931034483,
+      "training_time": 50.461514472961426
+    }
+  },
+  "models\\checkpoint_20260115_124118.pkl": {
+    "timestamp": "2026-01-15T12:41:18.656135",
+    "states": 4453,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 118000,
+      "total_episodes": 150000,
+      "win_rate": 65.7771186440678,
+      "training_time": 51.38960576057434
+    }
+  },
+  "models\\checkpoint_20260115_124119.pkl": {
+    "timestamp": "2026-01-15T12:41:19.537846",
+    "states": 4453,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 120000,
+      "total_episodes": 150000,
+      "win_rate": 65.75916666666667,
+      "training_time": 52.269718647003174
+    }
+  },
+  "models\\checkpoint_20260115_124120.pkl": {
+    "timestamp": "2026-01-15T12:41:20.904115",
+    "states": 4453,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 123000,
+      "total_episodes": 150000,
+      "win_rate": 65.7479674796748,
+      "training_time": 53.636661529541016
+    }
+  },
+  "models\\checkpoint_20260115_124121.pkl": {
+    "timestamp": "2026-01-15T12:41:21.796316",
+    "states": 4453,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 125000,
+      "total_episodes": 150000,
+      "win_rate": 65.74,
+      "training_time": 54.527673959732056
+    }
+  },
+  "models\\checkpoint_20260115_124122.pkl": {
+    "timestamp": "2026-01-15T12:41:22.818944",
+    "states": 4453,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 127000,
+      "total_episodes": 150000,
+      "win_rate": 65.74409448818898,
+      "training_time": 55.55083513259888
+    }
+  },
+  "models\\checkpoint_20260115_124123.pkl": {
+    "timestamp": "2026-01-15T12:41:23.760599",
+    "states": 4453,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 129000,
+      "total_episodes": 150000,
+      "win_rate": 65.75038759689923,
+      "training_time": 56.49266290664673
+    }
+  },
+  "models\\checkpoint_20260115_124124.pkl": {
+    "timestamp": "2026-01-15T12:41:24.672250",
+    "states": 4453,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 131000,
+      "total_episodes": 150000,
+      "win_rate": 65.73206106870228,
+      "training_time": 57.40579056739807
+    }
+  },
+  "models\\checkpoint_20260115_124125.pkl": {
+    "timestamp": "2026-01-15T12:41:25.564299",
+    "states": 4455,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 133000,
+      "total_episodes": 150000,
+      "win_rate": 65.73082706766917,
+      "training_time": 58.29676389694214
+    }
+  },
+  "models\\checkpoint_20260115_124126.pkl": {
+    "timestamp": "2026-01-15T12:41:26.940264",
+    "states": 4455,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 136000,
+      "total_episodes": 150000,
+      "win_rate": 65.71323529411764,
+      "training_time": 59.672301054000854
+    }
+  },
+  "models\\checkpoint_20260115_124127.pkl": {
+    "timestamp": "2026-01-15T12:41:27.969931",
+    "states": 4455,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 138000,
+      "total_episodes": 150000,
+      "win_rate": 65.70579710144926,
+      "training_time": 60.702779054641724
+    }
+  },
+  "models\\checkpoint_20260115_124128.pkl": {
+    "timestamp": "2026-01-15T12:41:28.912827",
+    "states": 4455,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 140000,
+      "total_episodes": 150000,
+      "win_rate": 65.70857142857143,
+      "training_time": 61.64486122131348
+    }
+  },
+  "models\\checkpoint_20260115_124129.pkl": {
+    "timestamp": "2026-01-15T12:41:29.935132",
+    "states": 4455,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 142000,
+      "total_episodes": 150000,
+      "win_rate": 65.7169014084507,
+      "training_time": 62.66668152809143
+    }
+  },
+  "models\\checkpoint_20260115_124130.pkl": {
+    "timestamp": "2026-01-15T12:41:30.916093",
+    "states": 4455,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 144000,
+      "total_episodes": 150000,
+      "win_rate": 65.71388888888889,
+      "training_time": 63.649561643600464
+    }
+  },
+  "models\\checkpoint_20260115_124131.pkl": {
+    "timestamp": "2026-01-15T12:41:31.839613",
+    "states": 4455,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 146000,
+      "total_episodes": 150000,
+      "win_rate": 65.73424657534247,
+      "training_time": 64.57165431976318
+    }
+  },
+  "models\\checkpoint_20260115_124132.pkl": {
+    "timestamp": "2026-01-15T12:41:32.841771",
+    "states": 4457,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 148000,
+      "total_episodes": 150000,
+      "win_rate": 65.76013513513513,
+      "training_time": 65.56783199310303
+    }
+  },
+  "models\\checkpoint_20260115_124133.pkl": {
+    "timestamp": "2026-01-15T12:41:33.850123",
+    "states": 4457,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 150000,
+      "total_episodes": 150000,
+      "win_rate": 65.75800000000001,
+      "training_time": 66.58297920227051
+    }
+  },
+  "models\\model_150000ep_20260115_124134.pkl": {
+    "timestamp": "2026-01-15T12:41:34.033017",
+    "states": 4457,
+    "epsilon": 0.01,
+    "metadata": {
+      "total_episodes": 150000,
+      "final_win_rate": 65.75800000000001,
+      "training_time": 66.67346215248108
+    }
+  },
+  "models\\checkpoint_20260115_124502.pkl": {
+    "timestamp": "2026-01-15T12:45:02.835257",
+    "states": 4459,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 2000,
+      "total_episodes": 38000,
+      "win_rate": 71.35000000000001,
+      "training_time": 0.8921489715576172
+    }
+  },
+  "models\\checkpoint_20260115_124503.pkl": {
+    "timestamp": "2026-01-15T12:45:03.787810",
+    "states": 4460,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 4000,
+      "total_episodes": 38000,
+      "win_rate": 73.275,
+      "training_time": 1.8450384140014648
+    }
+  },
+  "models\\checkpoint_20260115_124504.pkl": {
+    "timestamp": "2026-01-15T12:45:04.704378",
+    "states": 4460,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 6000,
+      "total_episodes": 38000,
+      "win_rate": 75.53333333333333,
+      "training_time": 2.759298801422119
+    }
+  },
+  "models\\checkpoint_20260115_124505.pkl": {
+    "timestamp": "2026-01-15T12:45:05.694272",
+    "states": 4460,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 8000,
+      "total_episodes": 38000,
+      "win_rate": 77.17500000000001,
+      "training_time": 3.749082565307617
+    }
+  },
+  "models\\checkpoint_20260115_124506.pkl": {
+    "timestamp": "2026-01-15T12:45:06.937825",
+    "states": 4460,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 10000,
+      "total_episodes": 38000,
+      "win_rate": 78.41,
+      "training_time": 4.9902050495147705
+    }
+  },
+  "models\\checkpoint_20260115_124507.pkl": {
+    "timestamp": "2026-01-15T12:45:07.528227",
+    "states": 4460,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 11000,
+      "total_episodes": 38000,
+      "win_rate": 78.75454545454545,
+      "training_time": 5.582136392593384
+    }
+  },
+  "models\\checkpoint_20260115_124508.pkl": {
+    "timestamp": "2026-01-15T12:45:08.537233",
+    "states": 4460,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 13000,
+      "total_episodes": 38000,
+      "win_rate": 79.45384615384616,
+      "training_time": 6.588870286941528
+    }
+  },
+  "models\\checkpoint_20260115_124509.pkl": {
+    "timestamp": "2026-01-15T12:45:09.533571",
+    "states": 4460,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 15000,
+      "total_episodes": 38000,
+      "win_rate": 80.02,
+      "training_time": 7.5913779735565186
+    }
+  },
+  "models\\checkpoint_20260115_124510.pkl": {
+    "timestamp": "2026-01-15T12:45:10.510333",
+    "states": 4460,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 17000,
+      "total_episodes": 38000,
+      "win_rate": 80.43529411764706,
+      "training_time": 8.56668496131897
+    }
+  },
+  "models\\checkpoint_20260115_124511.pkl": {
+    "timestamp": "2026-01-15T12:45:11.515646",
+    "states": 4460,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 19000,
+      "total_episodes": 38000,
+      "win_rate": 80.72105263157894,
+      "training_time": 9.572548389434814
+    }
+  },
+  "models\\checkpoint_20260115_124512.pkl": {
+    "timestamp": "2026-01-15T12:45:12.649460",
+    "states": 4460,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 21000,
+      "total_episodes": 38000,
+      "win_rate": 81.04761904761905,
+      "training_time": 10.705772161483765
+    }
+  },
+  "models\\checkpoint_20260115_124513.pkl": {
+    "timestamp": "2026-01-15T12:45:13.704005",
+    "states": 4460,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 23000,
+      "total_episodes": 38000,
+      "win_rate": 81.28695652173913,
+      "training_time": 11.75990080833435
+    }
+  },
+  "models\\checkpoint_20260115_124514.pkl": {
+    "timestamp": "2026-01-15T12:45:14.719521",
+    "states": 4460,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 25000,
+      "total_episodes": 38000,
+      "win_rate": 81.58,
+      "training_time": 12.775907278060913
+    }
+  },
+  "models\\checkpoint_20260115_124515.pkl": {
+    "timestamp": "2026-01-15T12:45:15.718360",
+    "states": 4460,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 27000,
+      "total_episodes": 38000,
+      "win_rate": 81.75555555555556,
+      "training_time": 13.764758586883545
+    }
+  },
+  "models\\checkpoint_20260115_124516.pkl": {
+    "timestamp": "2026-01-15T12:45:16.378384",
+    "states": 4461,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 28000,
+      "total_episodes": 38000,
+      "win_rate": 81.81071428571428,
+      "training_time": 14.429489850997925
+    }
+  },
+  "models\\checkpoint_20260115_124517.pkl": {
+    "timestamp": "2026-01-15T12:45:17.621480",
+    "states": 4461,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 30000,
+      "total_episodes": 38000,
+      "win_rate": 82.01,
+      "training_time": 15.676663160324097
+    }
+  },
+  "models\\checkpoint_20260115_124518.pkl": {
+    "timestamp": "2026-01-15T12:45:18.827311",
+    "states": 4462,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 32000,
+      "total_episodes": 38000,
+      "win_rate": 82.215625,
+      "training_time": 16.88219928741455
+    }
+  },
+  "models\\checkpoint_20260115_124519.pkl": {
+    "timestamp": "2026-01-15T12:45:20.006299",
+    "states": 4462,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 34000,
+      "total_episodes": 38000,
+      "win_rate": 82.41176470588235,
+      "training_time": 18.056997537612915
+    }
+  },
+  "models\\checkpoint_20260115_124520.pkl": {
+    "timestamp": "2026-01-15T12:45:20.585849",
+    "states": 4462,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 35000,
+      "total_episodes": 38000,
+      "win_rate": 82.54857142857142,
+      "training_time": 18.64023470878601
+    }
+  },
+  "models\\checkpoint_20260115_124521.pkl": {
+    "timestamp": "2026-01-15T12:45:21.735548",
+    "states": 4462,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 37000,
+      "total_episodes": 38000,
+      "win_rate": 82.70270270270271,
+      "training_time": 19.790249824523926
+    }
+  },
+  "models\\checkpoint_20260115_124522.pkl": {
+    "timestamp": "2026-01-15T12:45:22.306976",
+    "states": 4463,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 38000,
+      "total_episodes": 38000,
+      "win_rate": 82.76315789473684,
+      "training_time": 20.361850023269653
+    }
+  },
+  "models\\model_38000ep_20260115_124522.pkl": {
+    "timestamp": "2026-01-15T12:45:22.504441",
+    "states": 4463,
+    "epsilon": 0.01,
+    "metadata": {
+      "total_episodes": 38000,
+      "final_win_rate": 82.76315789473684,
+      "training_time": 20.456884384155273
+    }
+  },
+  "models\\checkpoint_20260115_131359.pkl": {
+    "timestamp": "2026-01-15T13:13:59.958886",
+    "states": 4463,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 1000,
+      "total_episodes": 8600,
+      "win_rate": 86.2,
+      "training_time": 0.5948824882507324
+    }
+  },
+  "models\\checkpoint_20260115_131400.pkl": {
+    "timestamp": "2026-01-15T13:14:00.722492",
+    "states": 4463,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 2000,
+      "total_episodes": 8600,
+      "win_rate": 86.25,
+      "training_time": 1.352531909942627
+    }
+  },
+  "models\\checkpoint_20260115_131401.pkl": {
+    "timestamp": "2026-01-15T13:14:01.542837",
+    "states": 4463,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 3000,
+      "total_episodes": 8600,
+      "win_rate": 86.13333333333333,
+      "training_time": 2.179243803024292
+    }
+  },
+  "models\\checkpoint_20260115_131402.pkl": {
+    "timestamp": "2026-01-15T13:14:02.273487",
+    "states": 4463,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 4000,
+      "total_episodes": 8600,
+      "win_rate": 85.675,
+      "training_time": 2.906222105026245
+    }
+  },
+  "models\\checkpoint_20260115_131403.pkl": {
+    "timestamp": "2026-01-15T13:14:03.992738",
+    "states": 4464,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 6000,
+      "total_episodes": 8600,
+      "win_rate": 85.48333333333333,
+      "training_time": 4.62937593460083
+    }
+  },
+  "models\\checkpoint_20260115_131404.pkl": {
+    "timestamp": "2026-01-15T13:14:04.810937",
+    "states": 4465,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 7000,
+      "total_episodes": 8600,
+      "win_rate": 85.3142857142857,
+      "training_time": 5.447711706161499
+    }
+  },
+  "models\\checkpoint_20260115_131405.pkl": {
+    "timestamp": "2026-01-15T13:14:05.508581",
+    "states": 4465,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 8000,
+      "total_episodes": 8600,
+      "win_rate": 85.28750000000001,
+      "training_time": 6.143911600112915
+    }
+  },
+  "models\\model_8600ep_20260115_131406.pkl": {
+    "timestamp": "2026-01-15T13:14:06.130787",
+    "states": 4465,
+    "epsilon": 0.01,
+    "metadata": {
+      "total_episodes": 8600,
+      "final_win_rate": 85.37209302325581,
+      "training_time": 6.602731466293335
+    }
+  },
+  "models\\checkpoint_20260115_160225.pkl": {
+    "timestamp": "2026-01-15T16:02:25.558182",
+    "states": 4488,
+    "epsilon": 0.3677874521460121,
+    "metadata": {
+      "episode": 2000,
+      "total_episodes": 10000,
+      "win_rate": 54.400000000000006,
+      "training_time": 0.98734450340271
+    }
+  },
+  "models\\checkpoint_20260115_160226.pkl": {
+    "timestamp": "2026-01-15T16:02:26.624962",
+    "states": 4488,
+    "epsilon": 0.13526760995605422,
+    "metadata": {
+      "episode": 4000,
+      "total_episodes": 10000,
+      "win_rate": 64.125,
+      "training_time": 2.0562939643859863
+    }
+  },
+  "models\\checkpoint_20260115_160227.pkl": {
+    "timestamp": "2026-01-15T16:02:27.598197",
+    "states": 4490,
+    "epsilon": 0.04974972962361759,
+    "metadata": {
+      "episode": 6000,
+      "total_episodes": 10000,
+      "win_rate": 69.83333333333334,
+      "training_time": 3.03013014793396
+    }
+  },
+  "models\\checkpoint_20260115_160228.pkl": {
+    "timestamp": "2026-01-15T16:02:28.572974",
+    "states": 4490,
+    "epsilon": 0.018297326303223154,
+    "metadata": {
+      "episode": 8000,
+      "total_episodes": 10000,
+      "win_rate": 73.6875,
+      "training_time": 4.004741668701172
+    }
+  },
+  "models\\checkpoint_20260115_160229.pkl": {
+    "timestamp": "2026-01-15T16:02:29.803977",
+    "states": 4490,
+    "epsilon": 0.01,
+    "metadata": {
+      "episode": 10000,
+      "total_episodes": 10000,
+      "win_rate": 76.49000000000001,
+      "training_time": 5.2333643436431885
+    }
+  },
+  "models\\model_10000ep_20260115_160229.pkl": {
+    "timestamp": "2026-01-15T16:02:29.984597",
+    "states": 4490,
+    "epsilon": 0.01,
+    "metadata": {
+      "total_episodes": 10000,
+      "final_win_rate": 76.49000000000001,
+      "final_draw_rate": 5.18,
+      "final_loss_rate": 18.33,
+      "training_time": 5.32878041267395,
+      "hyperparameters": {
+        "alpha": 0.2,
+        "gamma": 0.99,
+        "epsilon_start": 1.0,
+        "epsilon_final": 0.01,
+        "epsilon_min": 0.01,
+        "epsilon_decay": 0.9995
+      },
+      "performance": {
+        "states_learned": 4490,
+        "avg_reward": 0.5816,
+        "avg_moves": 6.5313
+      }
+    }
+  },
+  "models\\model_10000ep_20260115_160458.pkl": {
+    "timestamp": "2026-01-15T16:04:58.804533",
+    "states": 4503,
+    "epsilon": 0.01,
+    "metadata": {
+      "total_episodes": 10000,
+      "final_win_rate": 79.13,
+      "final_draw_rate": 5.28,
+      "final_loss_rate": 15.590000000000002,
+      "training_time": 4.7866926193237305,
+      "hyperparameters": {
+        "alpha": 0.2,
+        "gamma": 0.99,
+        "epsilon_start": 1.0,
+        "epsilon_final": 0.01,
+        "epsilon_min": 0.01,
+        "epsilon_decay": 0.9995
+      },
+      "performance": {
+        "states_learned": 4503,
+        "avg_reward": 0.6354,
+        "avg_moves": 6.4671
+      }
+    }
+  },
+  "models\\model_100000ep_20260115_160618.pkl": {
+    "timestamp": "2026-01-15T16:06:18.742118",
+    "states": 4511,
+    "epsilon": 0.01,
+    "metadata": {
+      "total_episodes": 100000,
+      "final_win_rate": 90.646,
+      "final_draw_rate": 2.928,
+      "final_loss_rate": 6.426,
+      "training_time": 50.399057388305664,
+      "hyperparameters": {
+        "alpha": 0.2,
+        "gamma": 0.99,
+        "epsilon_start": 1.0,
+        "epsilon_final": 0.01,
+        "epsilon_min": 0.01,
+        "epsilon_decay": 0.9995
+      },
+      "performance": {
+        "states_learned": 4511,
+        "avg_reward": 0.8422,
+        "avg_moves": 6.15124
+      }
+    }
+  },
+  "models\\model_100000ep_20260115_161218.pkl": {
+    "timestamp": "2026-01-15T16:12:18.382306",
+    "states": 4514,
+    "epsilon": 0.01,
+    "metadata": {
+      "total_episodes": 100000,
+      "final_win_rate": 94.13,
+      "final_draw_rate": 2.057,
+      "final_loss_rate": 3.8129999999999997,
+      "training_time": 50.75340294837952,
+      "hyperparameters": {
+        "alpha": 0.2,
+        "gamma": 0.99,
+        "epsilon_start": 1.0,
+        "epsilon_final": 0.01,
+        "epsilon_min": 0.01,
+        "epsilon_decay": 0.9995
+      },
+      "performance": {
+        "states_learned": 4514,
+        "avg_reward": 0.90317,
+        "avg_moves": 6.12543
+      }
+    }
+  },
+  "models\\model_100000ep_20260115_161706.pkl": {
+    "timestamp": "2026-01-15T16:17:06.790295",
+    "states": 4517,
+    "epsilon": 0.01,
+    "metadata": {
+      "total_episodes": 100000,
+      "final_win_rate": 94.637,
+      "final_draw_rate": 1.7260000000000002,
+      "final_loss_rate": 3.637,
+      "training_time": 61.34830689430237,
+      "hyperparameters": {
+        "alpha": 0.2,
+        "gamma": 0.99,
+        "epsilon_start": 1.0,
+        "epsilon_final": 0.01,
+        "epsilon_min": 0.01,
+        "epsilon_decay": 0.9995
+      },
+      "performance": {
+        "states_learned": 4517,
+        "avg_reward": 0.91,
+        "avg_moves": 6.06557
+      }
+    }
+  },
+  "models\\model_15000ep_20260115_164030.pkl": {
+    "timestamp": "2026-01-15T16:40:30.333680",
+    "states": 4518,
+    "epsilon": 0.01,
+    "metadata": {
+      "total_episodes": 15000,
+      "final_win_rate": 88.94666666666666,
+      "final_draw_rate": 2.9466666666666663,
+      "final_loss_rate": 8.106666666666666,
+      "training_time": 8.919219255447388,
+      "hyperparameters": {
+        "alpha": 0.2,
+        "gamma": 0.99,
+        "epsilon_start": 1.0,
+        "epsilon_final": 0.01,
+        "epsilon_min": 0.01,
+        "epsilon_decay": 0.9995
+      },
+      "performance": {
+        "states_learned": 4518,
+        "avg_reward": 0.8084,
+        "avg_moves": 6.2508
+      }
+    }
+  },
+  "models\\model_85000ep_20260115_164538.pkl": {
+    "timestamp": "2026-01-15T16:45:38.888591",
+    "states": 4518,
+    "epsilon": 0.01,
+    "metadata": {
+      "total_episodes": 85000,
+      "final_win_rate": 95.38705882352942,
+      "final_draw_rate": 1.4470588235294117,
+      "final_loss_rate": 3.1658823529411766,
+      "training_time": 73.07124519348145,
+      "hyperparameters": {
+        "alpha": 0.15,
+        "gamma": 0.92,
+        "epsilon_start": 1.0,
+        "epsilon_final": 0.01,
+        "epsilon_min": 0.01,
+        "epsilon_decay": 0.991
+      },
+      "performance": {
+        "states_learned": 4518,
+        "avg_reward": 0.9222117647058824,
+        "avg_moves": 6.019
+      }
+    }
+  }
+}
