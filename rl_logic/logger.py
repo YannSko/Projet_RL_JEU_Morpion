@@ -356,8 +356,15 @@ class RLLogger:
                 writer = csv.DictWriter(f, fieldnames=fieldnames)
                 writer.writeheader()
                 writer.writerows(self.training_stats)
+        except PermissionError:
+            # Fichier ouvert dans Excel ou verrouillé - ignorer silencieusement
+            pass
         except Exception as e:
-            print(f"Erreur sauvegarde stats: {e}")
+            # Afficher l'erreur seulement une fois
+            if not hasattr(self, '_stats_error_shown'):
+                print(f"⚠️ Impossible de sauvegarder training_stats.csv: {e}")
+                print("   (Vérifiez que le fichier n'est pas ouvert dans Excel)")
+                self._stats_error_shown = True
     
     def _save_evaluation(self):
         """Sauvegarde les résultats d'évaluation"""
