@@ -45,20 +45,21 @@ class ModelsView:
     
     def _create_buttons(self):
         """Crée les boutons d'action"""
-        button_width = 130
+        button_width = 120
         button_height = 40
-        spacing = 15
+        spacing = 12
         y = self.assets.window_size - 60
         
-        # Centrer les boutons
-        total_width = button_width * 4 + spacing * 3
+        # Centrer les boutons (maintenant 5 boutons)
+        total_width = button_width * 5 + spacing * 4
         start_x = (self.assets.window_size - total_width) // 2
         
         self.buttons = {
             'prev': pygame.Rect(start_x, y, button_width, button_height),
-            'load': pygame.Rect(start_x + button_width + spacing, y, button_width, button_height),
-            'refresh': pygame.Rect(start_x + (button_width + spacing) * 2, y, button_width, button_height),
-            'next': pygame.Rect(start_x + (button_width + spacing) * 3, y, button_width, button_height)
+            'load': pygame.Rect(start_x + (button_width + spacing), y, button_width, button_height),
+            'best': pygame.Rect(start_x + (button_width + spacing) * 2, y, button_width, button_height),
+            'refresh': pygame.Rect(start_x + (button_width + spacing) * 3, y, button_width, button_height),
+            'next': pygame.Rect(start_x + (button_width + spacing) * 4, y, button_width, button_height)
         }
     
     def refresh_models(self):
@@ -104,6 +105,10 @@ class ModelsView:
             if self.selected_model is not None:
                 self._load_selected_model()
                 return 'load'
+        
+        elif self.buttons['best'].collidepoint(pos):
+            self._load_best_model()
+            return 'load_best'
         
         # Clic sur un modèle
         model_idx = self._get_model_at_pos(pos)
@@ -151,6 +156,33 @@ class ModelsView:
             print(f"✓ Modèle chargé: {model['name']}")
         else:
             print(f"✗ Échec du chargement: {model['name']}")
+    
+    def _load_best_model(self):
+        """Charge automatiquement le meilleur modèle selon le score composite"""
+        print("\n" + "="*70)
+        print("🏆 CHARGEMENT DU MEILLEUR MODÈLE")
+        print("="*70)
+        
+        success = self.model_manager.load_best_model(self.agent, metric='composite_score')
+        
+        if success:
+            # Rafraîchir et trouver le modèle chargé pour le sélectionner
+            self.refresh_models()
+            
+            # Trouver l'index du meilleur modèle dans la liste
+            best_path = self.model_manager.get_best_model('composite_score')
+            for i, model in enumerate(self.models):
+                if model['path'] == best_path:
+                    self.selected_model = i
+                    self.page = i // self.items_per_page
+                    break
+            
+            self.current_model_path = best_path
+            print("✅ Meilleur modèle chargé avec succès !")
+            print("="*70 + "\n")
+        else:
+            print("❌ Échec du chargement du meilleur modèle")
+            print("="*70 + "\n")
     
     def draw(self):
         """Dessine la vue des modèles"""
@@ -353,53 +385,73 @@ class ModelsView:
         model = self.models[self.selected_model]
         metadata = model.get('metadata', {})
         
-        x_start = 520
-        y = 130
-        line_height = 30  # Réduit pour avoir plus d'espace
+        x_start = 515
+        y = 125
+        line_height = 22  # Réduit pour avoir plus d'espace
         
         # Titre
         self.assets.draw_text(
             self.screen,
-            "📊 DÉTAILS DU MODÈLE",
-            (650, y),
-            font_size='medium',
+            "📊 DÉTAILS",
+            (630, y),
+            font_size='small',
             color=self.assets.colors.SUCCESS_COLOR,
             centered=True
         )
-        y += 40
+        y += 30
         
-        # Nom complet
+        # Calculer les métriques avancées
+        metrics = self._calculate_model_metrics(model)
+        
+        # Afficher le score composite en premier (si disponible)
+        if metrics and 'composite_score' in metrics:
+            score_color = self._get_score_color(metrics['composite_score'])
+            self.assets.draw_text(
+                self.screen,
+                f"🏆 Score: {metrics['composite_score']:.1f}/100",
+                (630, y),
+                font_size='tiny',
+                color=score_color,
+                centered=True
+            )
+            y += line_height
+        
+        # Nom complet (raccourci si nécessaire)
+        name = model['name']
+        if len(name) > 18:
+            name = name[:15] + "..."
         self.assets.draw_text(
             self.screen,
-            f"Nom: {model['name']}",
+            name,
             (x_start, y),
-            font_size='small',
+            font_size='tiny',
             centered=False
         )
         y += line_height
         
-        # Date
+        # Date (format court)
         try:
             timestamp = datetime.fromisoformat(model['timestamp'])
-            date_text = timestamp.strftime("%d/%m/%Y à %H:%M:%S")
+            date_text = timestamp.strftime("%d/%m %H:%M")
         except:
-            date_text = model['timestamp']
+            date_text = model['timestamp'][:10] if len(model['timestamp']) > 10 else model['timestamp']
         
         self.assets.draw_text(
             self.screen,
-            f"Date: {date_text}",
+            date_text,
             (x_start, y),
-            font_size='small',
+            font_size='tiny',
+            color=(150, 150, 150),
             centered=False
         )
-        y += line_height + 10
+        y += line_height + 5
         
         # Section Performance
         self.assets.draw_text(
             self.screen,
-            "═══ PERFORMANCE ═══",
-            (650, y),
-            font_size='small',
+            "─ PERFORMANCE ─",
+            (630, y),
+            font_size='tiny',
             color=self.assets.colors.WARNING_COLOR,
             centered=True
         )
@@ -410,7 +462,7 @@ class ModelsView:
                 self.screen,
                 f"Épisodes: {metadata['total_episodes']:,}",
                 (x_start, y),
-                font_size='small',
+                font_size='tiny',
                 centered=False
             )
             y += line_height
@@ -420,9 +472,9 @@ class ModelsView:
             color = self.assets.colors.SUCCESS_COLOR if win_rate > 80 else self.assets.colors.WARNING_COLOR
             self.assets.draw_text(
                 self.screen,
-                f"Win Rate: {win_rate:.2f}%",
+                f"Win: {win_rate:.1f}%",
                 (x_start, y),
-                font_size='small',
+                font_size='tiny',
                 color=color,
                 centered=False
             )
@@ -431,9 +483,9 @@ class ModelsView:
         if 'final_draw_rate' in metadata:
             self.assets.draw_text(
                 self.screen,
-                f"Draw Rate: {metadata['final_draw_rate']:.2f}%",
+                f"Draw: {metadata['final_draw_rate']:.1f}%",
                 (x_start, y),
-                font_size='small',
+                font_size='tiny',
                 centered=False
             )
             y += line_height
@@ -441,19 +493,19 @@ class ModelsView:
         if 'final_loss_rate' in metadata:
             self.assets.draw_text(
                 self.screen,
-                f"Loss Rate: {metadata['final_loss_rate']:.2f}%",
+                f"Loss: {metadata['final_loss_rate']:.1f}%",
                 (x_start, y),
-                font_size='small',
+                font_size='tiny',
                 centered=False
             )
-            y += line_height + 10
+            y += line_height + 5
         
         # Section Hyperparamètres
         self.assets.draw_text(
             self.screen,
-            "═══ HYPERPARAMÈTRES ═══",
-            (650, y),
-            font_size='small',
+            "─ HYPERPARAMS ─",
+            (630, y),
+            font_size='tiny',
             color=self.assets.colors.WARNING_COLOR,
             centered=True
         )
@@ -465,9 +517,9 @@ class ModelsView:
             if 'alpha' in hyperparams:
                 self.assets.draw_text(
                     self.screen,
-                    f"Alpha (α): {hyperparams['alpha']}",
+                    f"α: {hyperparams['alpha']}",
                     (x_start, y),
-                    font_size='small',
+                    font_size='tiny',
                     centered=False
                 )
                 y += line_height
@@ -475,19 +527,9 @@ class ModelsView:
             if 'gamma' in hyperparams:
                 self.assets.draw_text(
                     self.screen,
-                    f"Gamma (γ): {hyperparams['gamma']}",
+                    f"γ: {hyperparams['gamma']}",
                     (x_start, y),
-                    font_size='small',
-                    centered=False
-                )
-                y += line_height
-            
-            if 'epsilon_start' in hyperparams:
-                self.assets.draw_text(
-                    self.screen,
-                    f"Epsilon initial: {hyperparams['epsilon_start']}",
-                    (x_start, y),
-                    font_size='small',
+                    font_size='tiny',
                     centered=False
                 )
                 y += line_height
@@ -495,19 +537,9 @@ class ModelsView:
             if 'epsilon_final' in hyperparams:
                 self.assets.draw_text(
                     self.screen,
-                    f"Epsilon final: {hyperparams['epsilon_final']:.6f}",
+                    f"ε final: {hyperparams['epsilon_final']:.4f}",
                     (x_start, y),
-                    font_size='small',
-                    centered=False
-                )
-                y += line_height
-            
-            if 'epsilon_min' in hyperparams:
-                self.assets.draw_text(
-                    self.screen,
-                    f"Epsilon min: {hyperparams['epsilon_min']}",
-                    (x_start, y),
-                    font_size='small',
+                    font_size='tiny',
                     centered=False
                 )
                 y += line_height
@@ -515,12 +547,12 @@ class ModelsView:
             if 'epsilon_decay' in hyperparams:
                 self.assets.draw_text(
                     self.screen,
-                    f"Epsilon decay: {hyperparams['epsilon_decay']}",
+                    f"ε decay: {hyperparams['epsilon_decay']}",
                     (x_start, y),
-                    font_size='small',
+                    font_size='tiny',
                     centered=False
                 )
-                y += line_height + 10
+                y += line_height + 5
         else:
             # Modèle ancien sans métadonnées - afficher les valeurs du modèle chargé
             self.assets.draw_text(
@@ -604,22 +636,83 @@ class ModelsView:
         # Section Métriques
         self.assets.draw_text(
             self.screen,
-            "═══ MÉTRIQUES ═══",
-            (650, y),
-            font_size='small',
+            "─ MÉTRIQUES ─",
+            (630, y),
+            font_size='tiny',
             color=self.assets.colors.WARNING_COLOR,
             centered=True
         )
         y += line_height
+        
+        # Afficher les métriques avancées si disponibles
+        if metrics and 'performance_score' in metrics:
+            perf_score = metrics.get('performance_score', 0)
+            eff_score = metrics.get('efficiency_score', 0)
+            rob_score = metrics.get('robustness_score', 0)
+            
+            # Performance
+            self.assets.draw_text(
+                self.screen,
+                f"Perf: {perf_score:.1f}",
+                (x_start, y),
+                font_size='tiny',
+                color=self._get_score_color(perf_score),
+                centered=False
+            )
+            y += line_height
+            
+            # Efficacité
+            eff_color = self.assets.colors.SUCCESS_COLOR if eff_score > 25 else self.assets.colors.WARNING_COLOR
+            self.assets.draw_text(
+                self.screen,
+                f"Efficacité: {eff_score:.1f}",
+                (x_start, y),
+                font_size='tiny',
+                color=eff_color,
+                centered=False
+            )
+            y += line_height
+            
+            # Robustesse
+            rob_color = self.assets.colors.SUCCESS_COLOR if rob_score > 1.5 else self.assets.colors.WARNING_COLOR
+            self.assets.draw_text(
+                self.screen,
+                f"Robustesse: {rob_score:.2f}",
+                (x_start, y),
+                font_size='tiny',
+                color=rob_color,
+                centered=False
+            )
+            y += line_height
+        else:
+            # Ancien modèle sans métriques complètes
+            self.assets.draw_text(
+                self.screen,
+                "Métriques non disponibles",
+                (x_start, y),
+                font_size='tiny',
+                color=(150, 150, 150),
+                centered=False
+            )
+            y += line_height
+            self.assets.draw_text(
+                self.screen,
+                "(modèle ancien)",
+                (x_start, y),
+                font_size='tiny',
+                color=(150, 150, 150),
+                centered=False
+            )
+            y += line_height
         
         performance = metadata.get('performance', {})
         if performance:
             if 'states_learned' in performance:
                 self.assets.draw_text(
                     self.screen,
-                    f"États appris: {performance['states_learned']}",
+                    f"États: {performance['states_learned']}",
                     (x_start, y),
-                    font_size='small',
+                    font_size='tiny',
                     centered=False
                 )
                 y += line_height
@@ -627,31 +720,21 @@ class ModelsView:
             if 'avg_reward' in performance:
                 self.assets.draw_text(
                     self.screen,
-                    f"Reward moyen: {performance['avg_reward']:.4f}",
+                    f"Reward: {performance['avg_reward']:.3f}",
                     (x_start, y),
-                    font_size='small',
-                    centered=False
-                )
-                y += line_height
-            
-            if 'avg_moves' in performance:
-                self.assets.draw_text(
-                    self.screen,
-                    f"Coups moyens: {performance['avg_moves']:.2f}",
-                    (x_start, y),
-                    font_size='small',
+                    font_size='tiny',
                     centered=False
                 )
                 y += line_height
         
-        if 'training_time' in metadata:
+        if 'training_time' in metadata and metadata['training_time'] > 0:
             minutes = int(metadata['training_time'] // 60)
             seconds = int(metadata['training_time'] % 60)
             self.assets.draw_text(
                 self.screen,
-                f"Temps d'entraînement: {minutes}m {seconds}s",
+                f"Temps: {minutes}m{seconds}s",
                 (x_start, y),
-                font_size='small',
+                font_size='tiny',
                 centered=False
             )
     
@@ -661,7 +744,7 @@ class ModelsView:
         self.assets.draw_button(
             self.screen,
             self.buttons['prev'],
-            "◀ Précédent",
+            "◀ Préc.",
             enabled=(self.page > 0)
         )
         
@@ -673,11 +756,19 @@ class ModelsView:
             enabled=(self.selected_model is not None)
         )
         
+        # Bouton Meilleur Modèle
+        self.assets.draw_button(
+            self.screen,
+            self.buttons['best'],
+            "🏆 Meilleur",
+            enabled=(len(self.models) > 0)
+        )
+        
         # Bouton Actualiser
         self.assets.draw_button(
             self.screen,
             self.buttons['refresh'],
-            "🔄 Actualiser"
+            "🔄 Refresh"
         )
         
         # Bouton Suivant
@@ -685,7 +776,7 @@ class ModelsView:
         self.assets.draw_button(
             self.screen,
             self.buttons['next'],
-            "Suivant ▶",
+            "Suiv. ▶",
             enabled=(self.page < max_page)
         )
         
@@ -706,3 +797,61 @@ class ModelsView:
         if self.selected_model is not None and self.selected_model < len(self.models):
             return self.models[self.selected_model]['path']
         return None
+    
+    def _calculate_model_metrics(self, model: Dict) -> Optional[Dict]:
+        """Calcule les métriques avancées pour un modèle"""
+        try:
+            from rl_logic.metrics import ModelMetrics
+            
+            # Vérifier qu'on a les données essentielles
+            # Chercher dans l'ordre : niveau racine puis dans metadata
+            win_rate = model.get('final_win_rate', 0)
+            if win_rate == 0:
+                # Essayer dans metadata
+                metadata = model.get('metadata', {})
+                win_rate = metadata.get('final_win_rate', 0)
+            
+            # Si toujours pas de win_rate, c'est un ancien modèle
+            if win_rate == 0:
+                return None
+            
+            # Récupérer toutes les métadonnées
+            metadata = model.get('metadata', {})
+            
+            # Créer une structure fusionnée
+            combined_metadata = {
+                'final_win_rate': model.get('final_win_rate', metadata.get('final_win_rate', 0)),
+                'final_draw_rate': model.get('final_draw_rate', metadata.get('final_draw_rate', 0)),
+                'final_loss_rate': model.get('final_loss_rate', metadata.get('final_loss_rate', 0)),
+                'total_episodes': model.get('total_episodes', metadata.get('total_episodes', 0)),
+            }
+            
+            # Ajouter les autres données de metadata
+            for key, value in metadata.items():
+                if key not in combined_metadata:
+                    combined_metadata[key] = value
+            
+            # Structure pour le calcul des métriques
+            model_data = {
+                'states': model.get('states', 0),
+                'epsilon': model.get('epsilon', 1.0),
+                'metadata': combined_metadata,
+                'timestamp': model.get('timestamp', '')
+            }
+            
+            metrics = ModelMetrics.compute_all_metrics(model_data)
+            return metrics
+            
+        except Exception as e:
+            # En cas d'erreur, afficher dans la console pour debug
+            print(f"⚠️ Erreur calcul métriques pour {model.get('name', 'N/A')}: {e}")
+            return None
+    
+    def _get_score_color(self, score: float) -> tuple:
+        """Retourne une couleur selon le score"""
+        if score >= 80:
+            return self.assets.colors.SUCCESS_COLOR
+        elif score >= 60:
+            return self.assets.colors.WARNING_COLOR
+        else:
+            return self.assets.colors.ERROR_COLOR

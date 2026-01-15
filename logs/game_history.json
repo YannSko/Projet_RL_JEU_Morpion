@@ -1,0 +1,2702 @@
+[
+  {
+    "timestamp": "2026-01-15T21:15:51.370168",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.00010752677917480469,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.379833",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.009772539138793945,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.380326",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.010266542434692383,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.380710",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.010650634765625,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.381045",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.010985136032104492,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.381359",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.011299848556518555,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.381845",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.011785745620727539,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.382168",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.012109041213989258,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.382473",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.012413978576660156,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.382781",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.012722253799438477,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.383085",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.013025760650634766,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.383451",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.013391733169555664,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.383817",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.013757467269897461,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.384174",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.014114856719970703,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.384499",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.014440059661865234,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.384866",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.014806509017944336,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.385197",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.01513814926147461,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.385566",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.015506982803344727,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.385931",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.015871524810791016,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.386315",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.016256332397460938,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.386678",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.016618967056274414,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.387077",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.01701807975769043,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.387444",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.01738452911376953,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.387821",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.0177614688873291,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.388191",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.018131732940673828,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.388583",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.018523216247558594,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.388986",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.01892685890197754,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.389401",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.01934194564819336,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.389805",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.019745349884033203,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.390221",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.02016162872314453,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.390663",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.020603656768798828,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.391141",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.02108144760131836,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.391589",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.0215299129486084,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.392033",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.021973609924316406,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.392450",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.022390365600585938,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.392933",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.022874116897583008,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.393382",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.023322582244873047,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.393846",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.023786306381225586,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.394325",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.024265766143798828,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.394806",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.024746179580688477,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.395281",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.02522134780883789,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.395753",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.025693416595458984,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.396226",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.026166439056396484,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.396736",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.026677370071411133,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.397220",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.0271608829498291,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.397728",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.027669191360473633,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.398271",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.02821207046508789,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.398835",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.02877521514892578,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.399358",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.029298782348632812,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.399878",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.029819250106811523,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.400429",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.03036975860595703,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.401008",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.030948877334594727,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.401552",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.031493186950683594,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.402087",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.0320277214050293,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.402633",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.03257393836975098,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.403205",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.03314542770385742,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.403768",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.03370833396911621,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.404404",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.03434443473815918,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.404994",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.03493499755859375,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.405718",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.035658836364746094,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.406311",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.03625130653381348,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.407381",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "Draw",
+    "num_moves": 9,
+    "duration": 0.03732156753540039,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.408038",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.0379786491394043,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.408909",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.03885006904602051,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.409577",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.039517879486083984,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.410223",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.040163278579711914,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.410911",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.04085183143615723,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.411565",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.04150557518005371,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.412216",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.04215645790100098,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.412871",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.04281115531921387,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.413543",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "Draw",
+    "num_moves": 9,
+    "duration": 0.04348325729370117,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.414190",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.044130563735961914,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.414861",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.04480171203613281,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.415536",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.045476436614990234,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.416194",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.04613471031188965,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.416897",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.046837568283081055,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.417567",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.04750800132751465,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.418223",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.04816389083862305,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.418915",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.04885554313659668,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.419618",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.04955887794494629,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.420311",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.05025196075439453,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.421000",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.050940752029418945,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.421695",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.0516352653503418,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.422418",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.05235886573791504,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.423108",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.05304908752441406,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.423871",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "Draw",
+    "num_moves": 9,
+    "duration": 0.05381131172180176,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.424862",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.05480194091796875,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.425628",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.05556917190551758,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.426386",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.05632662773132324,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.427157",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.05709719657897949,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.427890",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.057830810546875,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.428639",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.05857968330383301,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.429375",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.05931544303894043,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.430157",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.060097694396972656,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.430894",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.06083488464355469,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.431657",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.06159806251525879,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.432456",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.062397003173828125,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.433223",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.06316423416137695,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.433979",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.0639195442199707,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:15:51.434762",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.06470322608947754,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.726480",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.00010418891906738281,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.727469",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.0010936260223388672,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.728321",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.0019464492797851562,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.729174",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.002799510955810547,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.730000",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.0036253929138183594,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.730867",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.004492521286010742,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.731767",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.005392789840698242,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.732699",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.006324291229248047,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.733642",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.00726771354675293,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.734516",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.008141517639160156,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.735490",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.009115457534790039,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.736394",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.01001882553100586,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.737277",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.010902643203735352,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.738224",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.011849403381347656,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.739170",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.012795686721801758,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.740105",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.013730525970458984,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.741013",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.014638900756835938,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.741929",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.015555143356323242,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.742827",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.016452550888061523,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.743778",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.017403602600097656,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.744695",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.018320798873901367,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.745611",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.01923656463623047,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.746533",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.02015852928161621,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.748869",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.022494077682495117,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.749883",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.023508787155151367,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.750878",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.024503469467163086,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.751812",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.025437355041503906,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.752784",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.026409149169921875,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.753742",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.027367591857910156,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.754692",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.028317928314208984,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.755702",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.0293276309967041,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.756773",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.030397891998291016,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.757835",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.03146052360534668,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.758969",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.03259468078613281,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.759979",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.03360462188720703,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.761008",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.03463315963745117,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.762005",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.03563094139099121,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.763090",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.03671526908874512,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.764149",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.037774085998535156,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.765204",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.03883004188537598,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.766277",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.039902687072753906,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.767304",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.04092979431152344,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.768350",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.04197502136230469,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.769431",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.043056488037109375,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.770504",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.04412984848022461,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.771545",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.04517102241516113,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.772605",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.046230316162109375,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.773748",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.04737353324890137,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.774798",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.04842376708984375,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.775933",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.049558401107788086,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.777000",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.05062532424926758,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.778122",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.05174756050109863,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.779207",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.05283308029174805,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.780335",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.05396080017089844,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.781429",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.055054664611816406,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.782576",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.05620169639587402,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.783772",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.05739736557006836,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.784943",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "Draw",
+    "num_moves": 9,
+    "duration": 0.05856823921203613,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.786149",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.05977463722229004,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.787441",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.061066389083862305,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.788582",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.06220722198486328,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.789785",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.06341052055358887,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.790981",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.0646066665649414,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.792230",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.06585502624511719,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.793398",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.06702351570129395,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.794593",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.06821846961975098,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.795755",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.0693807601928711,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.796958",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.07058382034301758,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.798188",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.07181358337402344,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.799401",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.07302689552307129,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.800590",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.07421541213989258,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.801818",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.07544374465942383,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.803044",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.07666921615600586,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.804241",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.0778660774230957,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.805456",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.07908177375793457,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.806679",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.08030438423156738,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.807949",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.08157491683959961,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.809172",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.08279728889465332,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.810435",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.0840609073638916,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.811690",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.08531594276428223,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.812944",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.08656930923461914,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.814233",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.08785891532897949,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.815478",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.08910322189331055,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.816963",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.09058833122253418,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.818217",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.0918428897857666,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.819492",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.09311771392822266,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.820754",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.09437990188598633,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.822073",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.09569811820983887,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.823466",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.0970911979675293,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.824793",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.0984189510345459,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.826073",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.09969902038574219,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.827379",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.10100483894348145,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.828644",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.10226988792419434,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.829963",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.10358881950378418,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.831272",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.10489749908447266,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.832577",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.1062021255493164,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.833902",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.10752749443054199,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.835228",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.10885357856750488,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.836586",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.11021184921264648,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:18:10.837908",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.11153388023376465,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.810698",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.00010824203491210938,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.812242",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.0016531944274902344,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.813691",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.0031023025512695312,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.815074",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.004486083984375,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.816406",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.005817413330078125,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.817814",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.0072252750396728516,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.819264",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.008675336837768555,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.820646",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.010057926177978516,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.822023",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.011434793472290039,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.823447",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.01285862922668457,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.824840",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.014251708984375,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.826241",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.015652179718017578,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.827644",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.017055511474609375,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.829023",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.018434762954711914,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.830418",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.019829988479614258,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.831882",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.02129364013671875,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.833434",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "Draw",
+    "num_moves": 9,
+    "duration": 0.02284526824951172,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.834872",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.024283170700073242,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.836424",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.025835275650024414,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.837914",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.02732539176940918,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.839347",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.02875828742980957,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.840860",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.030271291732788086,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.842315",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.03172636032104492,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.843825",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "Draw",
+    "num_moves": 9,
+    "duration": 0.03323650360107422,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.845268",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.03467988967895508,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.846766",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.036177635192871094,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.848448",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.03785967826843262,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.850002",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.0394132137298584,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.851477",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.040888309478759766,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.852959",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.04237079620361328,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.854447",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.043859004974365234,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.855925",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.04533696174621582,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.857509",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.0469205379486084,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.859036",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.04844784736633301,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.860533",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.04994487762451172,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.862265",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.05167651176452637,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.863865",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.053276777267456055,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.865413",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.054824113845825195,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.867027",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.05643820762634277,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.868653",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.05806469917297363,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.870208",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.059619903564453125,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.871774",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.06118607521057129,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.873393",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.0628046989440918,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.874987",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.06439852714538574,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.876530",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.06594204902648926,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.878107",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.06751823425292969,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.880261",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.0696725845336914,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.882499",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.07191014289855957,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.884288",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.0736994743347168,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.885926",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.07533740997314453,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.887748",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.07715916633605957,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.889553",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.0789647102355957,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.891272",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.08068346977233887,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.893073",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.08248472213745117,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.894699",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.08411026000976562,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.896389",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.0858004093170166,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.898032",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.08744359016418457,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.899791",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "Draw",
+    "num_moves": 9,
+    "duration": 0.0892026424407959,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.901445",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.09085726737976074,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.903499",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.0929110050201416,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.905297",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.09470891952514648,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.907012",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.09642338752746582,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.908696",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.09810757637023926,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.910580",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.0999915599822998,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.912380",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.1017916202545166,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.914170",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.10358214378356934,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.915979",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.10539078712463379,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.917826",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.10723710060119629,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.919555",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.10896706581115723,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.921241",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.11065268516540527,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.922979",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.11239051818847656,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.924821",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "Draw",
+    "num_moves": 9,
+    "duration": 0.11423277854919434,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.927031",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "Draw",
+    "num_moves": 9,
+    "duration": 0.11644268035888672,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.928753",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.1181650161743164,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.930497",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.11990833282470703,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.932217",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.12162899971008301,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.933890",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.12330126762390137,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.935593",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.12500452995300293,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.937323",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.12673425674438477,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.939054",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.12846589088439941,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.940797",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.13020825386047363,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.942636",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.13204741477966309,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.944485",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.1338968276977539,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.946262",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "X",
+    "num_moves": 9,
+    "duration": 0.13567328453063965,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.947998",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.13740921020507812,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.949784",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.13919520378112793,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.952429",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.14184093475341797,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.954466",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.14387798309326172,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.956266",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.1456773281097412,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.958154",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.1475660800933838,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.959940",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 7,
+    "duration": 0.1493520736694336,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.961758",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.151170015335083,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.963543",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.1529545783996582,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.965531",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.15494251251220703,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.967482",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.15689349174499512,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.969288",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.15869975090026855,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.971102",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.16051363945007324,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.973073",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 8,
+    "duration": 0.16248512268066406,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.975032",
+    "player_x": "Agent",
+    "player_o": "Random",
+    "winner": "X",
+    "num_moves": 5,
+    "duration": 0.1644432544708252,
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-15T21:20:04.977030",
+    "player_x": "Random",
+    "player_o": "Agent",
+    "winner": "O",
+    "num_moves": 6,
+    "duration": 0.1664414405822754,
+    "metadata": {}
+  }
+]

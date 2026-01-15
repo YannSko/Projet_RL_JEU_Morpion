@@ -11,29 +11,33 @@
     }
   },
   "models\\q_table.pkl": {
-    "timestamp": "2026-01-15T16:45:38.760974",
-    "states": 4518,
+    "timestamp": "2026-01-15T21:20:04.722514",
+    "states": 4519,
     "epsilon": 0.01,
     "metadata": {
-      "total_episodes": 85000,
-      "final_win_rate": 95.38705882352942,
-      "final_draw_rate": 1.4470588235294117,
-      "final_loss_rate": 3.1658823529411766,
-      "training_time": 73.07124519348145,
+      "total_episodes": 10000,
+      "final_win_rate": 85.83,
+      "final_draw_rate": 3.63,
+      "final_loss_rate": 10.54,
+      "training_time": 1.7475786209106445,
       "hyperparameters": {
-        "alpha": 0.15,
-        "gamma": 0.92,
+        "alpha": 0.2,
+        "gamma": 0.99,
         "epsilon_start": 1.0,
         "epsilon_final": 0.01,
         "epsilon_min": 0.01,
-        "epsilon_decay": 0.991
+        "epsilon_decay": 0.9995
       },
       "performance": {
-        "states_learned": 4518,
-        "avg_reward": 0.9222117647058824,
-        "avg_moves": 6.019
+        "states_learned": 4519,
+        "avg_reward": 0.7529,
+        "avg_moves": 6.3572
       }
-    }
+    },
+    "final_win_rate": 85.83,
+    "final_draw_rate": 3.63,
+    "final_loss_rate": 10.54,
+    "total_episodes": 10000
   },
   "models\\checkpoint_20260115_114913.pkl": {
     "timestamp": "2026-01-15T11:49:13.117276",
@@ -2405,5 +2409,84 @@
         "avg_moves": 6.019
       }
     }
+  },
+  "models\\model_10000ep_20260115_211551.pkl": {
+    "timestamp": "2026-01-15T21:15:51.325495",
+    "states": 4518,
+    "epsilon": 0.01,
+    "metadata": {
+      "total_episodes": 10000,
+      "final_win_rate": 85.39,
+      "final_draw_rate": 3.7800000000000002,
+      "final_loss_rate": 10.83,
+      "training_time": 1.0690124034881592,
+      "hyperparameters": {
+        "alpha": 0.2,
+        "gamma": 0.99,
+        "epsilon_start": 1.0,
+        "epsilon_final": 0.01,
+        "epsilon_min": 0.01,
+        "epsilon_decay": 0.9995
+      },
+      "performance": {
+        "states_learned": 4518,
+        "avg_reward": 0.7456,
+        "avg_moves": 6.3773
+      }
+    }
+  },
+  "models\\model_10000ep_20260115_211810.pkl": {
+    "timestamp": "2026-01-15T21:18:10.682064",
+    "states": 4519,
+    "epsilon": 0.01,
+    "metadata": {
+      "total_episodes": 10000,
+      "final_win_rate": 85.76,
+      "final_draw_rate": 3.1399999999999997,
+      "final_loss_rate": 11.1,
+      "training_time": 1.8385388851165771,
+      "hyperparameters": {
+        "alpha": 0.2,
+        "gamma": 0.99,
+        "epsilon_start": 1.0,
+        "epsilon_final": 0.01,
+        "epsilon_min": 0.01,
+        "epsilon_decay": 0.9995
+      },
+      "performance": {
+        "states_learned": 4519,
+        "avg_reward": 0.7466,
+        "avg_moves": 6.3675
+      }
+    }
+  },
+  "models\\model_10000ep_20260115_212004.pkl": {
+    "timestamp": "2026-01-15T21:20:04.767496",
+    "states": 4519,
+    "epsilon": 0.01,
+    "metadata": {
+      "total_episodes": 10000,
+      "final_win_rate": 85.83,
+      "final_draw_rate": 3.63,
+      "final_loss_rate": 10.54,
+      "training_time": 1.7475786209106445,
+      "hyperparameters": {
+        "alpha": 0.2,
+        "gamma": 0.99,
+        "epsilon_start": 1.0,
+        "epsilon_final": 0.01,
+        "epsilon_min": 0.01,
+        "epsilon_decay": 0.9995
+      },
+      "performance": {
+        "states_learned": 4519,
+        "avg_reward": 0.7529,
+        "avg_moves": 6.3572
+      }
+    },
+    "final_win_rate": 85.83,
+    "final_draw_rate": 3.63,
+    "final_loss_rate": 10.54,
+    "total_episodes": 10000
   }
 }
