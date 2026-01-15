@@ -18,6 +18,8 @@ from .view_game import GameView
 from .view_stats import StatsView
 from .view_history import HistoryView
 from .view_models import ModelsView
+from .view_tournament import TournamentView
+from .view_automl import AutoMLView
 
 
 class GameGUI:
@@ -66,9 +68,15 @@ class GameGUI:
         
         self.models_view = ModelsView(self.screen, self.assets, self.model_manager, self.agent)
         
+        self.tournament_view = TournamentView(self.screen, self.assets, self.model_manager)
+        self.tournament_view.load_models()
+        
+        self.automl_view = AutoMLView(self.screen, self.assets)
+        
         # État de l'application
-        self.current_view = 'menu'  # 'menu', 'game', 'stats', 'train', 'level_select', 'history', 'models'
+        self.current_view = 'menu'  # 'menu', 'game', 'stats', 'train', 'level_select', 'history', 'models', 'tournament', 'automl'
         self.selected_mode = None
+        self.coach_mode = False  # Mode Coach activé/désactivé
         
         # Boutons du menu
         self._create_menu_buttons()
@@ -79,33 +87,33 @@ class GameGUI:
         button_width = 300
         button_height = 45
         start_x = (self.window_size - button_width) // 2
-        start_y = 100
-        spacing = 60
+        start_y = 80
+        spacing = 53
         
         self.menu_buttons = [
             {
                 'rect': pygame.Rect(start_x, start_y, button_width, button_height),
-                'text': 'Humain vs Humain',
+                'text': '👥 Humain vs Humain',
                 'action': 'start_HH'
             },
             {
                 'rect': pygame.Rect(start_x, start_y + spacing, button_width, button_height),
-                'text': 'Humain vs IA',
+                'text': '🎮 Humain vs IA',
                 'action': 'select_level_HA'
             },
             {
                 'rect': pygame.Rect(start_x, start_y + spacing * 2, button_width, button_height),
-                'text': 'IA vs IA',
+                'text': '🤖 IA vs IA',
                 'action': 'select_level_AA'
             },
             {
                 'rect': pygame.Rect(start_x, start_y + spacing * 3, button_width, button_height),
-                'text': 'Entraînement Rapide',
+                'text': '⚡ Entraînement Rapide',
                 'action': 'train'
             },
             {
                 'rect': pygame.Rect(start_x, start_y + spacing * 4, button_width, button_height),
-                'text': 'Statistiques',
+                'text': '📊 Statistiques',
                 'action': 'stats'
             },
             {
@@ -117,6 +125,21 @@ class GameGUI:
                 'rect': pygame.Rect(start_x, start_y + spacing * 6, button_width, button_height),
                 'text': '🧠 Gestion des Modèles',
                 'action': 'models'
+            },
+            {
+                'rect': pygame.Rect(start_x, start_y + spacing * 7, button_width, button_height),
+                'text': '🏆 Tournoi',
+                'action': 'tournament'
+            },
+            {
+                'rect': pygame.Rect(start_x, start_y + spacing * 8, button_width, button_height),
+                'text': '🤖 AutoML',
+                'action': 'automl'
+            },
+            {
+                'rect': pygame.Rect(start_x, start_y + spacing * 9, button_width, button_height),
+                'text': '🧑‍🏫 Mode Coach',
+                'action': 'toggle_coach'
             }
         ]
     
@@ -167,7 +190,18 @@ class GameGUI:
                     elif event.type == pygame.KEYDOWN:
                         key_name = pygame.key.name(event.key)
                         self.app_logger.log_keypress(key_name, self.current_view)
+                        
+                        # Touche C pour toggle Coach mode en jeu
+                        if event.key == pygame.K_c and self.current_view == 'game':
+                            self.coach_mode = not self.coach_mode
+                            print(f"Mode Coach: {'Activé' if self.coach_mode else 'Désactivé'}")
+                        
                         self._handle_key_press(event.key)
+                    
+                    elif event.type == pygame.MOUSEWHEEL:
+                        # Gérer le scroll dans certaines vues
+                        if self.current_view == 'tournament':
+                            self.tournament_view.handle_scroll(event.y)
                 
                 # Mise à jour
                 if self.current_view == 'game':
@@ -224,6 +258,14 @@ class GameGUI:
                     model_name = os.path.basename(model_path)
                     self.game_view.set_agent(self.agent, model_name)
                     self.stats_view.set_agent(self.agent)
+        elif self.current_view == 'tournament':
+            action = self.tournament_view.handle_click(pos)
+            if action == 'back':
+                self.current_view = 'menu'
+        elif self.current_view == 'automl':
+            action = self.automl_view.handle_click(pos)
+            if action == 'back':
+                self.current_view = 'menu'
     
     def _handle_menu_click(self, pos):
         """Gère les clics sur le menu"""
@@ -260,6 +302,21 @@ class GameGUI:
                     self.app_logger.log_navigation('menu', 'models')
                     self.models_view.refresh_models()
                     self.current_view = 'models'
+                
+                elif action == 'tournament':
+                    self.app_logger.log_navigation('menu', 'tournament')
+                    self.tournament_view.load_models()
+                    self.current_view = 'tournament'
+                
+                elif action == 'automl':
+                    self.app_logger.log_navigation('menu', 'automl')
+                    self.current_view = 'automl'
+                
+                elif action == 'toggle_coach':
+                    self.coach_mode = not self.coach_mode
+                    msg = f"Mode Coach {'activé ✅' if self.coach_mode else 'désactivé ❌'}"
+                    print(msg)
+                    self.app_logger.log_info(msg)
     
     def _handle_level_click(self, pos):
         """Gère les clics sur la sélection de niveau"""
@@ -300,12 +357,19 @@ class GameGUI:
             self._draw_level_select()
         elif self.current_view == 'game':
             self.game_view.draw()
+            # Afficher le mode Coach si activé
+            if self.coach_mode:
+                self._draw_coach_hints()
         elif self.current_view == 'stats':
             self.stats_view.draw()
         elif self.current_view == 'history':
             self.history_view.draw()
         elif self.current_view == 'models':
             self.models_view.draw()
+        elif self.current_view == 'tournament':
+            self.tournament_view.draw()
+        elif self.current_view == 'automl':
+            self.automl_view.draw()
     
     def _draw_menu(self):
         """Dessine le menu principal"""
@@ -735,6 +799,104 @@ class GameGUI:
             
             pygame.display.flip()
             self.clock.tick(30)
+    
+    def _draw_coach_hints(self):
+        """Dessine les hints du Coach IA"""
+        try:
+            from rl_logic.coach import AICoach
+            import numpy as np
+            
+            # Créer le coach si nécessaire
+            if not hasattr(self, 'coach'):
+                self.coach = AICoach(self.agent, self.env)
+            
+            # Obtenir l'état actuel du jeu
+            if not hasattr(self.game_view, 'get_current_state'):
+                print("⚠️ game_view n'a pas get_current_state")
+                return
+            
+            state_tuple, board = self.game_view.get_current_state()
+            legal_actions = self.env.legal_actions(state_tuple)
+            
+            if not legal_actions or self.game_view.is_game_over():
+                return
+            
+            # Obtenir le meilleur coup et la confiance
+            best_action, best_q, confidence = self.coach.get_best_action_with_confidence(state_tuple, legal_actions)
+            
+            if best_action is None:
+                return
+            
+            # Panel des hints - FOND SEMI-TRANSPARENT SOMBRE
+            panel_rect = pygame.Rect(10, 450, 250, 200)
+            # Créer surface semi-transparente
+            panel_surface = pygame.Surface((250, 200))
+            panel_surface.fill((20, 20, 20))
+            panel_surface.set_alpha(230)
+            self.screen.blit(panel_surface, (10, 450))
+            
+            # Bordure colorée
+            pygame.draw.rect(self.screen, (255, 200, 0), panel_rect, 3)
+            
+            # Titre - GROS ET VISIBLE
+            title_font = pygame.font.Font(None, 32)
+            title_surface = title_font.render("COACH IA", True, (255, 200, 0))
+            title_rect = title_surface.get_rect(center=(135, 470))
+            self.screen.blit(title_surface, title_rect)
+            
+            # Meilleur coup - EN VERT CLAIR
+            row, col = best_action // 3, best_action % 3
+            move_font = pygame.font.Font(None, 28)
+            move_text = f"Coup: ({row}, {col})"
+            move_surface = move_font.render(move_text, True, (0, 255, 100))
+            self.screen.blit(move_surface, (20, 500))
+            
+            # Q-value - EN BLANC
+            q_font = pygame.font.Font(None, 24)
+            q_text = f"Q-value: {best_q:.3f}"
+            q_surface = q_font.render(q_text, True, (255, 255, 255))
+            self.screen.blit(q_surface, (20, 530))
+            
+            # Confiance - EN CYAN
+            conf_short = confidence[:18] if len(confidence) > 18 else confidence
+            conf_font = pygame.font.Font(None, 22)
+            conf_text = f"{conf_short}"
+            conf_surface = conf_font.render(conf_text, True, (100, 200, 255))
+            self.screen.blit(conf_surface, (20, 555))
+            
+            # Explication - EN JAUNE
+            explanation = self.coach.explain_action(state_tuple, best_action, board)
+            exp_font = pygame.font.Font(None, 20)
+            parts = explanation.split('|')[:2]
+            y = 580
+            for part in parts:
+                part = part.strip()
+                if len(part) > 24:
+                    part = part[:21] + "..."
+                exp_surface = exp_font.render(part, True, (255, 255, 100))
+                self.screen.blit(exp_surface, (15, y))
+                y += 22
+            
+            # Indicateur visuel sur le plateau (cercle)
+            if hasattr(self.game_view, 'board_offset'):
+                cell_size = 150
+                offset = self.game_view.board_offset
+                highlight_x = offset + col * cell_size + cell_size // 2
+                highlight_y = offset + row * cell_size + cell_size // 2
+                
+                pygame.draw.circle(
+                    self.screen,
+                    self.assets.colors.ACCENT_COLOR,
+                    (highlight_x, highlight_y),
+                    70,
+                    4
+                )
+        
+        except Exception as e:
+            # Afficher l'erreur dans le terminal pour debug
+            print(f"❌ Erreur Mode Coach: {e}")
+            import traceback
+            traceback.print_exc()
 
 
 def main():

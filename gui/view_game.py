@@ -523,3 +523,15 @@ class GameView:
             'num_moves': self.num_moves,
             'duration': duration
         }
+    
+    def get_current_state(self) -> Tuple[tuple, any]:
+        """
+        Retourne l'état actuel du jeu pour le Coach.
+        
+        Returns:
+            (state_tuple, board_array)
+        """
+        # get_state() retourne (board_flat, current_player)
+        state_tuple = self.env.get_state()  # État complet
+        board = self.env.get_board_copy()
+        return state_tuple, board

@@ -37,6 +37,10 @@ class ModelsView:
         self.page = 0
         self.items_per_page = 8  # Augmenté car les entrées sont plus compactes
         
+        # Pour le renommage
+        self.renaming = False
+        self.rename_text = ""
+        
         # Boutons
         self._create_buttons()
         
@@ -45,12 +49,13 @@ class ModelsView:
     
     def _create_buttons(self):
         """Crée les boutons d'action"""
-        button_width = 120
+        button_width = 110
         button_height = 40
-        spacing = 12
+        spacing = 10
         y = self.assets.window_size - 60
+        y2 = self.assets.window_size - 110
         
-        # Centrer les boutons (maintenant 5 boutons)
+        # Ligne du bas (7 boutons)
         total_width = button_width * 5 + spacing * 4
         start_x = (self.assets.window_size - total_width) // 2
         
@@ -59,7 +64,11 @@ class ModelsView:
             'load': pygame.Rect(start_x + (button_width + spacing), y, button_width, button_height),
             'best': pygame.Rect(start_x + (button_width + spacing) * 2, y, button_width, button_height),
             'refresh': pygame.Rect(start_x + (button_width + spacing) * 3, y, button_width, button_height),
-            'next': pygame.Rect(start_x + (button_width + spacing) * 4, y, button_width, button_height)
+            'next': pygame.Rect(start_x + (button_width + spacing) * 4, y, button_width, button_height),
+            # Ligne du haut
+            'import': pygame.Rect(start_x + (button_width + spacing), y2, button_width, button_height),
+            'rename': pygame.Rect(start_x + (button_width + spacing) * 2, y2, button_width, button_height),
+            'delete': pygame.Rect(start_x + (button_width + spacing) * 3, y2, button_width, button_height)
         }
     
     def refresh_models(self):
@@ -109,6 +118,20 @@ class ModelsView:
         elif self.buttons['best'].collidepoint(pos):
             self._load_best_model()
             return 'load_best'
+        
+        elif self.buttons.get('import') and self.buttons['import'].collidepoint(pos):
+            self._import_model()
+            return 'import'
+        
+        elif self.buttons.get('rename') and self.buttons['rename'].collidepoint(pos):
+            if self.selected_model is not None:
+                self._start_rename()
+            return 'rename'
+        
+        elif self.buttons.get('delete') and self.buttons['delete'].collidepoint(pos):
+            if self.selected_model is not None:
+                self._delete_model()
+            return 'delete'
         
         # Clic sur un modèle
         model_idx = self._get_model_at_pos(pos)
@@ -183,6 +206,142 @@ class ModelsView:
         else:
             print("❌ Échec du chargement du meilleur modèle")
             print("="*70 + "\n")
+    
+    def _import_model(self):
+        """Importe un modèle externe"""
+        import tkinter as tk
+        from tkinter import filedialog
+        from pathlib import Path
+        
+        # Créer une fenêtre Tkinter cachée
+        root = tk.Tk()
+        root.withdraw()
+        root.attributes('-topmost', True)
+        
+        # Ouvrir le dialogue de fichier
+        file_path = filedialog.askopenfilename(
+            title="Sélectionner un modèle à importer",
+            filetypes=[("Modèles PKL", "*.pkl"), ("Tous les fichiers", "*.*")],
+            initialdir="."
+        )
+        
+        root.destroy()
+        
+        if file_path:
+            import shutil
+            
+            # Copier le fichier dans le dossier models
+            file_name = Path(file_path).name
+            dest_path = self.model_manager.models_dir / file_name
+            
+            # Si le fichier existe déjà, ajouter un numéro
+            counter = 1
+            while dest_path.exists():
+                base = Path(file_name).stem
+                ext = Path(file_name).suffix
+                dest_path = self.model_manager.models_dir / f"{base}_{counter}{ext}"
+                counter += 1
+            
+            try:
+                shutil.copy2(file_path, dest_path)
+                print(f"✓ Modèle importé: {dest_path.name}")
+                self.refresh_models()
+            except Exception as e:
+                print(f"✗ Erreur lors de l'import: {e}")
+    
+    def _start_rename(self):
+        """Commence le processus de renommage"""
+        if self.selected_model is None:
+            return
+        
+        from pathlib import Path
+        import tkinter as tk
+        from tkinter import simpledialog
+        
+        model = self.models[self.selected_model]
+        current_name = Path(model['name']).stem
+        
+        root = tk.Tk()
+        root.withdraw()
+        root.attributes('-topmost', True)
+        
+        new_name = simpledialog.askstring(
+            "Renommer le modèle",
+            "Nouveau nom (sans extension):",
+            initialvalue=current_name,
+            parent=root
+        )
+        
+        root.destroy()
+        
+        if new_name and new_name != current_name:
+            self._rename_model(new_name)
+    
+    def _rename_model(self, new_name: str):
+        """Renomme le modèle sélectionné"""
+        if self.selected_model is None:
+            return
+        
+        from pathlib import Path
+        
+        model = self.models[self.selected_model]
+        old_path = Path(model['path'])
+        new_path = old_path.parent / f"{new_name}.pkl"
+        
+        if new_path.exists():
+            print(f"✗ Un modèle nommé '{new_name}' existe déjà")
+            return
+        
+        try:
+            old_path.rename(new_path)
+            print(f"✓ Modèle renommé: {new_name}")
+            
+            # Mettre à jour les métadonnées
+            if str(old_path) in self.model_manager.metadata:
+                self.model_manager.metadata[str(new_path)] = self.model_manager.metadata.pop(str(old_path))
+                self.model_manager._save_metadata()
+            
+            self.refresh_models()
+        except Exception as e:
+            print(f"✗ Erreur lors du renommage: {e}")
+    
+    def _delete_model(self):
+        """Supprime le modèle sélectionné"""
+        if self.selected_model is None:
+            return
+        
+        from pathlib import Path
+        import tkinter as tk
+        from tkinter import messagebox
+        
+        model = self.models[self.selected_model]
+        
+        root = tk.Tk()
+        root.withdraw()
+        root.attributes('-topmost', True)
+        
+        confirm = messagebox.askyesno(
+            "Confirmer la suppression",
+            f"Voulez-vous vraiment supprimer le modèle:\n{model['name']}?\n\nCette action est irréversible.",
+            parent=root
+        )
+        
+        root.destroy()
+        
+        if confirm:
+            try:
+                Path(model['path']).unlink()
+                
+                # Supprimer des métadonnées
+                if model['path'] in self.model_manager.metadata:
+                    del self.model_manager.metadata[model['path']]
+                    self.model_manager._save_metadata()
+                
+                print(f"✓ Modèle supprimé: {model['name']}")
+                self.selected_model = None
+                self.refresh_models()
+            except Exception as e:
+                print(f"✗ Erreur lors de la suppression: {e}")
     
     def draw(self):
         """Dessine la vue des modèles"""
@@ -778,6 +937,28 @@ class ModelsView:
             self.buttons['next'],
             "Suiv. ▶",
             enabled=(self.page < max_page)
+        )
+        
+        # Nouveaux boutons - Ligne du haut
+        self.assets.draw_button(
+            self.screen,
+            self.buttons['import'],
+            "📥 Importer",
+            enabled=True
+        )
+        
+        self.assets.draw_button(
+            self.screen,
+            self.buttons['rename'],
+            "✏️ Renommer",
+            enabled=(self.selected_model is not None)
+        )
+        
+        self.assets.draw_button(
+            self.screen,
+            self.buttons['delete'],
+            "🗑️ Supprimer",
+            enabled=(self.selected_model is not None)
         )
         
         # Numéro de page
