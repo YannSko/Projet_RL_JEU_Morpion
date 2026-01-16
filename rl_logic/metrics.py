@@ -124,6 +124,129 @@ class ModelMetrics:
         }
     
     @staticmethod
+    def calculate_bellman_error(q_table: Dict, gamma: float = 0.95) -> float:
+        """
+        Calcule l'erreur de Bellman moyenne sur la Q-table.
+        Mesure |Q(s,a) - (R + γ·max Q(s',a'))|.
+        
+        Args:
+            q_table: Q-table du modèle
+            gamma: Facteur de discount
+        
+        Returns:
+            Erreur de Bellman moyenne (plus petit = meilleur)
+        """
+        if not q_table:
+            return 0.0
+        
+        errors = []
+        for state, actions in q_table.items():
+            if actions:
+                max_q = max(actions.values())
+                for action, q_value in actions.items():
+                    # Estimation simplifiée de l'erreur TD
+                    # Dans un vrai scénario, on aurait besoin de R et s'
+                    # Ici on estime avec la cohérence interne de la Q-table
+                    expected_q = gamma * max_q
+                    error = abs(q_value - expected_q)
+                    errors.append(error)
+        
+        return float(np.mean(errors)) if errors else 0.0
+    
+    @staticmethod
+    def calculate_td_error_stats(episode_rewards: List[float]) -> Dict[str, float]:
+        """
+        Calcule les statistiques d'erreur TD sur les récompenses d'épisodes.
+        
+        Args:
+            episode_rewards: Liste des récompenses par épisode
+        
+        Returns:
+            Statistiques TD (mean, std, variance)
+        """
+        if not episode_rewards or len(episode_rewards) < 2:
+            return {'mean': 0.0, 'std': 0.0, 'variance': 0.0}
+        
+        rewards_array = np.array(episode_rewards)
+        return {
+            'mean': float(np.mean(rewards_array)),
+            'std': float(np.std(rewards_array)),
+            'variance': float(np.var(rewards_array))
+        }
+    
+    @staticmethod
+    def calculate_return_variance(episode_rewards: List[float]) -> float:
+        """
+        Calcule la variance des retours cumulatifs.
+        Faible variance = politique stable et consistante.
+        
+        Args:
+            episode_rewards: Liste des récompenses par épisode
+        
+        Returns:
+            Variance des retours (plus petit = meilleur)
+        """
+        if not episode_rewards or len(episode_rewards) < 2:
+            return 0.0
+        
+        return float(np.var(episode_rewards))
+    
+    @staticmethod
+    def calculate_sample_efficiency(win_rate: float, total_episodes: int) -> float:
+        """
+        Calcule l'efficacité d'échantillonnage (sample efficiency).
+        Performance obtenue / Nombre d'épisodes utilisés.
+        
+        Args:
+            win_rate: Taux de victoire final (0-100)
+            total_episodes: Nombre d'épisodes d'entraînement
+        
+        Returns:
+            Score d'efficacité (plus élevé = meilleur)
+        """
+        if total_episodes == 0:
+            return 0.0
+        
+        # Normaliser par millier d'épisodes
+        efficiency = win_rate / (total_episodes / 1000.0)
+        return efficiency
+    
+    @staticmethod
+    def calculate_policy_entropy(q_table: Dict, temperature: float = 1.0) -> float:
+        """
+        Calcule l'entropie de la politique dérivée de la Q-table.
+        H(π) = -Σ π(a|s)·log(π(a|s))
+        
+        Args:
+            q_table: Q-table du modèle
+            temperature: Paramètre de température pour softmax
+        
+        Returns:
+            Entropie moyenne (haute = exploratoire, basse = déterministe)
+        """
+        if not q_table:
+            return 0.0
+        
+        entropies = []
+        
+        for state, actions in q_table.items():
+            if not actions:
+                continue
+            
+            # Convertir Q-values en probabilités avec softmax
+            q_values = np.array(list(actions.values()))
+            exp_q = np.exp(q_values / temperature)
+            probs = exp_q / np.sum(exp_q)
+            
+            # Calculer l'entropie
+            # Éviter log(0)
+            probs = np.clip(probs, 1e-10, 1.0)
+            entropy = -np.sum(probs * np.log(probs))
+            entropies.append(entropy)
+        
+        return float(np.mean(entropies)) if entropies else 0.0
+    
+    @staticmethod
     def calculate_composite_score(metrics: Dict) -> float:
         """
         Calcule un score composite pour classer les modèles.
@@ -137,11 +260,14 @@ class ModelMetrics:
         """
         # Pondérations pour chaque métrique
         weights = {
-            'performance_score': 0.40,    # 40% - Le plus important
-            'efficiency_score': 0.15,     # 15%
-            'robustness_score': 0.20,     # 20%
-            'learning_speed': 0.15,       # 15%
-            'convergence': 0.10           # 10% - Epsilon proche du minimum
+            'performance_score': 0.30,    # 30% - Le plus important
+            'efficiency_score': 0.12,     # 12%
+            'robustness_score': 0.15,     # 15%
+            'learning_speed': 0.12,       # 12%
+            'convergence': 0.08,          # 8% - Epsilon proche du minimum
+            'sample_efficiency': 0.10,    # 10% - Nouvelles métriques RL
+            'return_variance': 0.08,      # 8% - Stabilité (inversé)
+            'policy_entropy': 0.05        # 5% - Déterminisme
         }
         
         # Calculer le score de convergence (epsilon proche de min = mieux)
@@ -149,25 +275,38 @@ class ModelMetrics:
         epsilon_min = metrics.get('epsilon_min', 0.01)
         convergence_score = (1 - (epsilon - epsilon_min) / (1 - epsilon_min)) * 100
         
+        # Normaliser return_variance (plus petit = meilleur, inverser pour le score)
+        return_var = metrics.get('return_variance', 0.5)
+        return_var_score = max(0, (1 - min(return_var, 1.0)) * 100)
+        
+        # Normaliser policy_entropy (basse = bonne politique déterministe)
+        policy_ent = metrics.get('policy_entropy', 1.0)
+        entropy_score = max(0, (1 - min(policy_ent / 2.0, 1.0)) * 100)
+        
         # Score composite pondéré
         composite = (
             metrics.get('performance_score', 0) * weights['performance_score'] +
             metrics.get('efficiency_score', 0) * weights['efficiency_score'] +
             metrics.get('robustness_score', 0) * weights['robustness_score'] +
             metrics.get('learning_speed', 0) * weights['learning_speed'] +
-            convergence_score * weights['convergence']
+            convergence_score * weights['convergence'] +
+            metrics.get('sample_efficiency', 0) * weights['sample_efficiency'] +
+            return_var_score * weights['return_variance'] +
+            entropy_score * weights['policy_entropy']
         )
         
         return composite
     
     @classmethod
-    def compute_all_metrics(cls, model_data: Dict, q_table: Optional[Dict] = None) -> Dict:
+    def compute_all_metrics(cls, model_data: Dict, q_table: Optional[Dict] = None, 
+                           episode_rewards: Optional[List[float]] = None) -> Dict:
         """
         Calcule toutes les métriques pour un modèle.
         
         Args:
             model_data: Données du modèle (métadonnées)
             q_table: Q-table du modèle (optionnel)
+            episode_rewards: Liste des récompenses par épisode (optionnel)
         
         Returns:
             Dictionnaire avec toutes les métriques calculées
@@ -189,6 +328,7 @@ class ModelMetrics:
         hyperparams = metadata.get('hyperparameters', {})
         epsilon = model_data.get('epsilon', hyperparams.get('epsilon_final', 1.0))
         epsilon_min = hyperparams.get('epsilon_min', 0.01)
+        gamma = hyperparams.get('gamma', 0.95)
         
         # Calculer toutes les métriques
         metrics = {
@@ -203,11 +343,14 @@ class ModelMetrics:
             'epsilon': epsilon,
             'epsilon_min': epsilon_min,
             
-            # Métriques calculées
+            # Métriques calculées (classiques)
             'performance_score': cls.calculate_performance_score(win_rate, draw_rate, loss_rate),
             'efficiency_score': cls.calculate_efficiency_score(win_rate, states_learned),
             'robustness_score': cls.calculate_robustness_score(avg_reward, avg_moves),
             'learning_speed': cls.calculate_learning_speed(win_rate, total_episodes),
+            
+            # Nouvelles métriques RL
+            'sample_efficiency': cls.calculate_sample_efficiency(win_rate, total_episodes),
             
             # Hyperparamètres
             'hyperparameters': hyperparams
@@ -216,6 +359,17 @@ class ModelMetrics:
         # Ajouter les métriques de Q-table si disponible
         if q_table:
             metrics['q_table_quality'] = cls.calculate_q_table_quality(q_table)
+            metrics['bellman_error'] = cls.calculate_bellman_error(q_table, gamma)
+            metrics['policy_entropy'] = cls.calculate_policy_entropy(q_table)
+        
+        # Ajouter les métriques basées sur episode_rewards si disponibles
+        if episode_rewards:
+            metrics['td_error_stats'] = cls.calculate_td_error_stats(episode_rewards)
+            metrics['return_variance'] = cls.calculate_return_variance(episode_rewards)
+        else:
+            # Valeurs par défaut
+            metrics['return_variance'] = 0.3
+            metrics['policy_entropy'] = 0.5
         
         # Score composite final
         metrics['composite_score'] = cls.calculate_composite_score(metrics)

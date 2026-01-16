@@ -25,16 +25,18 @@ from .view_automl import AutoMLView
 class GameGUI:
     """Application principale de l'interface graphique"""
     
-    def __init__(self, window_size: int = 660):
+    def __init__(self, window_size: int = 900):
         """
         Initialise l'application.
         
         Args:
-            window_size: Taille de la fenêtre
+            window_size: Taille de la fenêtre (largeur, hauteur sera ajustée)
         """
         pygame.init()
         self.window_size = window_size
-        self.screen = pygame.display.set_mode((window_size, window_size))
+        # Hauteur augmentée pour afficher tous les boutons
+        window_height = window_size + 150  
+        self.screen = pygame.display.set_mode((window_size, window_height))
         pygame.display.set_caption("Morpion - Q-Learning RL")
         self.clock = pygame.time.Clock()
         
@@ -480,7 +482,10 @@ class GameGUI:
         import time
         start_time = time.time()
         self.trainer.reset_stats()
-        train_stats = self.trainer.train(num_episodes, verbose=True)
+        
+        # Évaluation proportionnelle au nombre d'épisodes
+        eval_games = min(1000, max(100, num_episodes // 10))
+        train_stats = self.trainer.train(num_episodes, verbose=True, eval_games=eval_games)
         duration = time.time() - start_time
         
         # Logger la fin

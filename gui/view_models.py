@@ -41,6 +41,10 @@ class ModelsView:
         self.renaming = False
         self.rename_text = ""
         
+        # Système de tri
+        self.sort_criteria = ['composite_score', 'sample_efficiency', 'bellman_error']  # Top 3 critères
+        self.current_sort_index = 0  # Index du critère actuel
+        
         # Boutons
         self._create_buttons()
         
@@ -66,6 +70,7 @@ class ModelsView:
             'refresh': pygame.Rect(start_x + (button_width + spacing) * 3, y, button_width, button_height),
             'next': pygame.Rect(start_x + (button_width + spacing) * 4, y, button_width, button_height),
             # Ligne du haut
+            'sort': pygame.Rect(start_x, y2, button_width, button_height),
             'import': pygame.Rect(start_x + (button_width + spacing), y2, button_width, button_height),
             'rename': pygame.Rect(start_x + (button_width + spacing) * 2, y2, button_width, button_height),
             'delete': pygame.Rect(start_x + (button_width + spacing) * 3, y2, button_width, button_height)
@@ -75,14 +80,36 @@ class ModelsView:
         """Actualise la liste des modèles disponibles"""
         self.models = self.model_manager.list_models()
         
-        # Trier par timestamp (plus récent en premier)
-        self.models.sort(key=lambda x: x['timestamp'], reverse=True)
+        # Trier selon le critère actuel
+        self._sort_models()
         
         # Déterminer le modèle actuellement chargé
         if os.path.exists(str(self.model_manager.default_model)):
             self.current_model_path = str(self.model_manager.default_model)
         else:
             self.current_model_path = None
+    
+    def _sort_models(self):
+        """Trie les modèles selon le critère actuel"""
+        current_sort = self.sort_criteria[self.current_sort_index]
+        
+        # Calculer les métriques pour chaque modèle si nécessaire
+        if current_sort in ['composite_score', 'sample_efficiency', 'bellman_error']:
+            for model in self.models:
+                if 'metrics' not in model:
+                    model['metrics'] = self._calculate_model_metrics(model)
+        
+        # Trier selon le critère
+        if current_sort == 'composite_score':
+            self.models.sort(key=lambda x: x.get('metrics', {}).get('composite_score', 0) if x.get('metrics') else 0, reverse=True)
+        elif current_sort == 'sample_efficiency':
+            self.models.sort(key=lambda x: x.get('metrics', {}).get('sample_efficiency', 0) if x.get('metrics') else 0, reverse=True)
+        elif current_sort == 'bellman_error':
+            # Plus petit = meilleur
+            self.models.sort(key=lambda x: x.get('metrics', {}).get('bellman_error', 999) if x.get('metrics') else 999, reverse=False)
+        else:
+            # Par défaut : timestamp
+            self.models.sort(key=lambda x: x['timestamp'], reverse=True)
     
     def handle_click(self, pos: tuple) -> Optional[str]:
         """
@@ -109,6 +136,12 @@ class ModelsView:
         elif self.buttons['refresh'].collidepoint(pos):
             self.refresh_models()
             return 'refresh'
+        
+        elif self.buttons.get('sort') and self.buttons['sort'].collidepoint(pos):
+            # Changer de critère de tri (cycle)
+            self.current_sort_index = (self.current_sort_index + 1) % len(self.sort_criteria)
+            self._sort_models()
+            return 'sort'
         
         elif self.buttons['load'].collidepoint(pos):
             if self.selected_model is not None:
@@ -843,6 +876,63 @@ class ModelsView:
                 centered=False
             )
             y += line_height
+            
+            # Nouvelles métriques RL
+            # Sample Efficiency
+            if 'sample_efficiency' in metrics:
+                sample_eff = metrics['sample_efficiency']
+                color = self.assets.colors.SUCCESS_COLOR if sample_eff > 5.0 else self.assets.colors.WARNING_COLOR if sample_eff > 2.0 else (200, 100, 100)
+                self.assets.draw_text(
+                    self.screen,
+                    f"Sample Eff: {sample_eff:.2f}",
+                    (x_start, y),
+                    font_size='tiny',
+                    color=color,
+                    centered=False
+                )
+                y += line_height
+            
+            # Bellman Error
+            if 'bellman_error' in metrics:
+                bellman = metrics['bellman_error']
+                color = self.assets.colors.SUCCESS_COLOR if bellman < 0.1 else self.assets.colors.WARNING_COLOR if bellman < 0.3 else (200, 100, 100)
+                self.assets.draw_text(
+                    self.screen,
+                    f"Bellman: {bellman:.4f}",
+                    (x_start, y),
+                    font_size='tiny',
+                    color=color,
+                    centered=False
+                )
+                y += line_height
+            
+            # Return Variance
+            if 'return_variance' in metrics:
+                ret_var = metrics['return_variance']
+                color = self.assets.colors.SUCCESS_COLOR if ret_var < 0.3 else self.assets.colors.WARNING_COLOR if ret_var < 0.5 else (200, 100, 100)
+                self.assets.draw_text(
+                    self.screen,
+                    f"RetVar: {ret_var:.3f}",
+                    (x_start, y),
+                    font_size='tiny',
+                    color=color,
+                    centered=False
+                )
+                y += line_height
+            
+            # Policy Entropy
+            if 'policy_entropy' in metrics:
+                entropy = metrics['policy_entropy']
+                color = self.assets.colors.SUCCESS_COLOR if entropy < 0.3 else self.assets.colors.WARNING_COLOR if entropy < 0.7 else (200, 100, 100)
+                self.assets.draw_text(
+                    self.screen,
+                    f"Entropy: {entropy:.3f}",
+                    (x_start, y),
+                    font_size='tiny',
+                    color=color,
+                    centered=False
+                )
+                y += line_height
         else:
             # Ancien modèle sans métriques complètes
             self.assets.draw_text(
@@ -961,6 +1051,20 @@ class ModelsView:
             enabled=(self.selected_model is not None)
         )
         
+        # Bouton Tri
+        sort_names = {
+            'composite_score': '🏆 Score',
+            'sample_efficiency': '⚡ Sample Eff',
+            'bellman_error': '🎯 Bellman'
+        }
+        current_sort = self.sort_criteria[self.current_sort_index]
+        self.assets.draw_button(
+            self.screen,
+            self.buttons['sort'],
+            f"Tri: {sort_names.get(current_sort, current_sort)}",
+            enabled=True
+        )
+        
         # Numéro de page
         if len(self.models) > 0:
             max_page = max(0, (len(self.models) - 1) // self.items_per_page)
@@ -983,6 +1087,8 @@ class ModelsView:
         """Calcule les métriques avancées pour un modèle"""
         try:
             from rl_logic.metrics import ModelMetrics
+            from rl_logic.agent import QLearningAgent
+            from engine.environment import TicTacToeEnvironment
             
             # Vérifier qu'on a les données essentielles
             # Chercher dans l'ordre : niveau racine puis dans metadata
@@ -1012,6 +1118,17 @@ class ModelsView:
                 if key not in combined_metadata:
                     combined_metadata[key] = value
             
+            # Charger la Q-table du modèle pour calculer les nouvelles métriques RL
+            q_table = None
+            try:
+                env = TicTacToeEnvironment()
+                temp_agent = QLearningAgent(env)
+                success = self.model_manager.load_model(temp_agent, model['path'])
+                if success:
+                    q_table = temp_agent.q_table
+            except Exception as e:
+                print(f"⚠️ Impossible de charger Q-table pour {model.get('name', 'N/A')}: {e}")
+            
             # Structure pour le calcul des métriques
             model_data = {
                 'states': model.get('states', 0),
@@ -1020,12 +1137,15 @@ class ModelsView:
                 'timestamp': model.get('timestamp', '')
             }
             
-            metrics = ModelMetrics.compute_all_metrics(model_data)
+            # Calculer les métriques avec la Q-table si disponible
+            metrics = ModelMetrics.compute_all_metrics(model_data, q_table=q_table)
             return metrics
             
         except Exception as e:
             # En cas d'erreur, afficher dans la console pour debug
             print(f"⚠️ Erreur calcul métriques pour {model.get('name', 'N/A')}: {e}")
+            import traceback
+            traceback.print_exc()
             return None
     
     def _get_score_color(self, score: float) -> tuple:

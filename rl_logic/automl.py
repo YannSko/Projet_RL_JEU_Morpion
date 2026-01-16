@@ -222,7 +222,9 @@ class AutoMLTuner:
         trainer = Trainer(agent, self.env, logger, model_manager)
         
         train_start = time.time()
-        train_stats = trainer.train(num_episodes, verbose=False)
+        # Évaluation plus courte pour AutoML (gain de temps)
+        eval_games = min(500, max(100, num_episodes // 20))
+        train_stats = trainer.train(num_episodes, verbose=False, eval_games=eval_games)
         train_duration = time.time() - train_start
         
         # Évaluer
