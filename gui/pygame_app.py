@@ -374,70 +374,98 @@ class GameGUI:
             self.automl_view.draw()
     
     def _draw_menu(self):
-        """Dessine le menu principal"""
-        self.screen.fill(self.assets.colors.BG_COLOR)
+        """Dessine le menu principal moderne"""
+        # Fond dégradé sombre
+        self.screen.fill(self.assets.colors.BG_DARK)
         
-        # Titre
-        self.assets.draw_text(
+        # Barre de titre avec style
+        self.assets.draw_title_bar(
             self.screen,
-            "MORPION - Q-LEARNING",
-            (self.window_size // 2, 70),
-            font_size='large',
-            centered=True
+            "🎮 MORPION Q-LEARNING",
+            "Intelligence Artificielle par Apprentissage par Renforcement"
         )
         
-        # Info agent
+        # Info agent dans une carte
         stats = self.agent.get_stats()
-        info_text = f"États: {stats['total_states']} | Epsilon: {stats['epsilon']:.4f}"
-        self.assets.draw_text(
+        info_rect = pygame.Rect(self.window_size // 2 - 200, 120, 400, 90)
+        self.assets.draw_card(
             self.screen,
-            info_text,
-            (self.window_size // 2, 110),
-            font_size='tiny',
-            centered=True
+            info_rect,
+            content=[
+                ("🧠 États explorés", f"{stats['total_states']:,}"),
+                ("🎲 Epsilon actuel", f"{stats['epsilon']:.4f}")
+            ]
         )
         
-        # Boutons
+        # Boutons avec nouveaux styles
         mouse_pos = pygame.mouse.get_pos()
-        for button in self.menu_buttons:
+        for i, button in enumerate(self.menu_buttons):
             hovered = button['rect'].collidepoint(mouse_pos)
+            
+            # Déterminer le style selon le type de bouton
+            if 'Coach' in button['text']:
+                style = 'success' if self.coach_mode else 'neutral'
+            elif 'Entraînement' in button['text']:
+                style = 'success'
+            elif 'IA' in button['text']:
+                style = 'primary'
+            else:
+                style = 'neutral'
+            
+            # Extraire l'icône et le texte
+            parts = button['text'].split(' ', 1)
+            icon = parts[0] if len(parts) > 1 else None
+            text = parts[1] if len(parts) > 1 else button['text']
+            
             self.assets.draw_button(
                 self.screen,
                 button['rect'],
-                button['text'],
-                hovered
+                text,
+                hovered,
+                style=style,
+                icon=icon
             )
     
     def _draw_level_select(self):
-        """Dessine la sélection du niveau"""
-        self.screen.fill(self.assets.colors.BG_COLOR)
+        """Dessine la sélection du niveau moderne"""
+        self.screen.fill(self.assets.colors.BG_DARK)
         
-        # Titre
-        self.assets.draw_text(
+        # Titre moderne
+        self.assets.draw_title_bar(
             self.screen,
-            "CHOISIR LE NIVEAU DE L'IA",
-            (self.window_size // 2, 100),
-            font_size='large',
-            centered=True
+            "🎯 NIVEAU DE L'IA",
+            "Choisissez la difficulté de votre adversaire"
         )
         
-        # Boutons
+        # Boutons avec styles différents
         mouse_pos = pygame.mouse.get_pos()
-        for button in self.level_buttons:
+        styles = ['danger', 'neutral', 'success']  # Expert=rouge, Inter=neutre, Débutant=vert
+        icons = ['🔥', '⚡', '🌱']
+        
+        for i, button in enumerate(self.level_buttons):
             hovered = button['rect'].collidepoint(mouse_pos)
+            
+            # Extraire le texte sans epsilon
+            level_name = button['level']
+            epsilon_value = button['text'].split('(')[1].rstrip(')')
+            text = f"{level_name}\n{epsilon_value}"
+            
             self.assets.draw_button(
                 self.screen,
                 button['rect'],
-                button['text'],
-                hovered
+                text,
+                hovered,
+                style=styles[i],
+                icon=icons[i]
             )
         
         # Instructions
         self.assets.draw_text(
             self.screen,
-            "ECHAP: Retour",
-            (self.window_size // 2, self.window_size - 30),
+            "ECHAP: Retour au menu",
+            (self.window_size // 2, self.window_size + 120),
             font_size='small',
+            color=self.assets.colors.TEXT_SECONDARY,
             centered=True
         )
     
