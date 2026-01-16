@@ -11,32 +11,83 @@
     }
   },
   "models\\q_table.pkl": {
-    "timestamp": "2026-01-15T21:51:41.679173",
-    "states": 2596,
+    "timestamp": "2026-01-16T11:49:39.848019",
+    "states": 4205,
     "epsilon": 0.01,
     "metadata": {
       "total_episodes": 50000,
-      "final_win_rate": 86.732,
-      "final_draw_rate": 5.390000000000001,
-      "final_loss_rate": 7.878,
-      "training_time": 14.34603238105774,
+      "training_time": 476.6569926738739,
+      "final_win_rate": 91.83333333333333,
+      "final_draw_rate": 2.533333333333333,
+      "final_loss_rate": 5.633333333333333,
+      "eval_games": 1000,
+      "eval_seeds": 3,
+      "eval_robustness": {
+        "win_rate_std": 0.857645355351244,
+        "win_rate_min": 90.8,
+        "win_rate_max": 92.9,
+        "seed_results": [
+          {
+            "seed": 42,
+            "wins": 908,
+            "losses": 62,
+            "draws": 30,
+            "num_games": 1000,
+            "win_rate": 90.8,
+            "loss_rate": 6.2,
+            "draw_rate": 3.0,
+            "duration": 120.17677640914917
+          },
+          {
+            "seed": 43,
+            "wins": 918,
+            "losses": 55,
+            "draws": 27,
+            "num_games": 1000,
+            "win_rate": 91.8,
+            "loss_rate": 5.5,
+            "draw_rate": 2.7,
+            "duration": 134.48731589317322
+          },
+          {
+            "seed": 44,
+            "wins": 929,
+            "losses": 52,
+            "draws": 19,
+            "num_games": 1000,
+            "win_rate": 92.9,
+            "loss_rate": 5.2,
+            "draw_rate": 1.9,
+            "duration": 148.08520889282227
+          }
+        ]
+      },
+      "training_stats": {
+        "train_win_rate": 88.862,
+        "train_draw_rate": 3.472,
+        "train_loss_rate": 7.666,
+        "avg_reward": 0.81196,
+        "avg_moves": 6.24952
+      },
       "hyperparameters": {
-        "alpha": 0.1,
-        "gamma": 0.9,
+        "alpha": 0.2,
+        "gamma": 0.99,
         "epsilon_start": 1.0,
         "epsilon_final": 0.01,
         "epsilon_min": 0.01,
-        "epsilon_decay": 0.99
+        "epsilon_decay": 0.9995
       },
       "performance": {
-        "states_learned": 2596,
-        "avg_reward": 0.78854,
-        "avg_moves": 6.69088
-      }
+        "states_learned": 4205,
+        "avg_reward": 0.81196,
+        "avg_moves": 6.24952
+      },
+      "metrics_source": "evaluation",
+      "eval_epsilon": 0.0
     },
-    "final_win_rate": 86.732,
-    "final_draw_rate": 5.390000000000001,
-    "final_loss_rate": 7.878,
+    "final_win_rate": 91.83333333333333,
+    "final_draw_rate": 2.533333333333333,
+    "final_loss_rate": 5.633333333333333,
     "total_episodes": 50000
   },
   "models\\checkpoint_20260115_114913.pkl": {
@@ -2691,5 +2742,306 @@
     "final_draw_rate": 5.390000000000001,
     "final_loss_rate": 7.878,
     "total_episodes": 50000
+  },
+  "models\\model_5000ep_20260116_104133.pkl": {
+    "timestamp": "2026-01-16T10:41:33.714882",
+    "states": 3231,
+    "epsilon": 0.0820336944319021,
+    "metadata": {
+      "total_episodes": 5000,
+      "training_time": 39.93658494949341,
+      "final_win_rate": 77.8,
+      "final_draw_rate": 6.6000000000000005,
+      "final_loss_rate": 15.6,
+      "eval_games": 500,
+      "training_stats": {
+        "train_win_rate": 58.81999999999999,
+        "train_draw_rate": 9.94,
+        "train_loss_rate": 31.240000000000002,
+        "avg_reward": 0.2758,
+        "avg_moves": 7.1398
+      },
+      "hyperparameters": {
+        "alpha": 0.15,
+        "gamma": 0.92,
+        "epsilon_start": 1.0,
+        "epsilon_final": 0.0820336944319021,
+        "epsilon_min": 0.01,
+        "epsilon_decay": 0.9995
+      },
+      "performance": {
+        "states_learned": 3231,
+        "avg_reward": 0.2758,
+        "avg_moves": 7.1398
+      },
+      "metrics_source": "evaluation",
+      "eval_epsilon": 0.0
+    },
+    "final_win_rate": 77.8,
+    "final_draw_rate": 6.6000000000000005,
+    "final_loss_rate": 15.6,
+    "total_episodes": 5000
+  },
+  "models\\model_50000ep_20260116_114940.pkl": {
+    "timestamp": "2026-01-16T11:49:40.117405",
+    "states": 4205,
+    "epsilon": 0.01,
+    "metadata": {
+      "total_episodes": 50000,
+      "training_time": 476.6569926738739,
+      "final_win_rate": 91.83333333333333,
+      "final_draw_rate": 2.533333333333333,
+      "final_loss_rate": 5.633333333333333,
+      "eval_games": 1000,
+      "eval_seeds": 3,
+      "eval_robustness": {
+        "win_rate_std": 0.857645355351244,
+        "win_rate_min": 90.8,
+        "win_rate_max": 92.9,
+        "seed_results": [
+          {
+            "seed": 42,
+            "wins": 908,
+            "losses": 62,
+            "draws": 30,
+            "num_games": 1000,
+            "win_rate": 90.8,
+            "loss_rate": 6.2,
+            "draw_rate": 3.0,
+            "duration": 120.17677640914917
+          },
+          {
+            "seed": 43,
+            "wins": 918,
+            "losses": 55,
+            "draws": 27,
+            "num_games": 1000,
+            "win_rate": 91.8,
+            "loss_rate": 5.5,
+            "draw_rate": 2.7,
+            "duration": 134.48731589317322
+          },
+          {
+            "seed": 44,
+            "wins": 929,
+            "losses": 52,
+            "draws": 19,
+            "num_games": 1000,
+            "win_rate": 92.9,
+            "loss_rate": 5.2,
+            "draw_rate": 1.9,
+            "duration": 148.08520889282227
+          }
+        ]
+      },
+      "training_stats": {
+        "train_win_rate": 88.862,
+        "train_draw_rate": 3.472,
+        "train_loss_rate": 7.666,
+        "avg_reward": 0.81196,
+        "avg_moves": 6.24952
+      },
+      "hyperparameters": {
+        "alpha": 0.2,
+        "gamma": 0.99,
+        "epsilon_start": 1.0,
+        "epsilon_final": 0.01,
+        "epsilon_min": 0.01,
+        "epsilon_decay": 0.9995
+      },
+      "performance": {
+        "states_learned": 4205,
+        "avg_reward": 0.81196,
+        "avg_moves": 6.24952
+      },
+      "metrics_source": "evaluation",
+      "eval_epsilon": 0.0
+    },
+    "final_win_rate": 91.83333333333333,
+    "final_draw_rate": 2.533333333333333,
+    "final_loss_rate": 5.633333333333333,
+    "total_episodes": 50000
+  },
+  "models\\sample_eff_best.pkl": {
+    "timestamp": "2026-01-16T10:54:10.625333",
+    "states": 3235,
+    "epsilon": 0.0820336944319021,
+    "metadata": {
+      "total_episodes": 5000,
+      "training_time": 81.02244234085083,
+      "final_win_rate": 86.1,
+      "final_draw_rate": 3.3,
+      "final_loss_rate": 10.6,
+      "eval_games": 200,
+      "eval_seeds": 5,
+      "eval_robustness": {
+        "win_rate_std": 0.66332495807108,
+        "win_rate_min": 85.0,
+        "win_rate_max": 87.0,
+        "seed_results": [
+          {
+            "seed": 42,
+            "wins": 172,
+            "losses": 21,
+            "draws": 7,
+            "num_games": 200,
+            "win_rate": 86.0,
+            "loss_rate": 10.5,
+            "draw_rate": 3.5000000000000004,
+            "duration": 10.474236726760864
+          },
+          {
+            "seed": 43,
+            "wins": 173,
+            "losses": 21,
+            "draws": 6,
+            "num_games": 200,
+            "win_rate": 86.5,
+            "loss_rate": 10.5,
+            "draw_rate": 3.0,
+            "duration": 14.907179117202759
+          },
+          {
+            "seed": 44,
+            "wins": 172,
+            "losses": 22,
+            "draws": 6,
+            "num_games": 200,
+            "win_rate": 86.0,
+            "loss_rate": 11.0,
+            "draw_rate": 3.0,
+            "duration": 15.51628828048706
+          },
+          {
+            "seed": 45,
+            "wins": 174,
+            "losses": 19,
+            "draws": 7,
+            "num_games": 200,
+            "win_rate": 87.0,
+            "loss_rate": 9.5,
+            "draw_rate": 3.5000000000000004,
+            "duration": 15.768428564071655
+          },
+          {
+            "seed": 46,
+            "wins": 170,
+            "losses": 23,
+            "draws": 7,
+            "num_games": 200,
+            "win_rate": 85.0,
+            "loss_rate": 11.5,
+            "draw_rate": 3.5000000000000004,
+            "duration": 17.617008686065674
+          }
+        ]
+      },
+      "training_stats": {
+        "train_win_rate": 60.919999999999995,
+        "train_draw_rate": 8.799999999999999,
+        "train_loss_rate": 30.28,
+        "avg_reward": 0.3064,
+        "avg_moves": 7.0596
+      },
+      "hyperparameters": {
+        "alpha": 0.15,
+        "gamma": 0.92,
+        "epsilon_start": 1.0,
+        "epsilon_final": 0.0820336944319021,
+        "epsilon_min": 0.01,
+        "epsilon_decay": 0.9995
+      },
+      "performance": {
+        "states_learned": 3235,
+        "avg_reward": 0.3064,
+        "avg_moves": 7.0596
+      },
+      "metrics_source": "evaluation",
+      "eval_epsilon": 0.0
+    },
+    "final_win_rate": 86.1,
+    "final_draw_rate": 3.3,
+    "final_loss_rate": 10.6,
+    "total_episodes": 5000
+  },
+  "models\\best_score.pkl": {
+    "timestamp": "2026-01-16T11:22:22.773843",
+    "states": 3910,
+    "epsilon": 0.01,
+    "metadata": {
+      "total_episodes": 10000,
+      "training_time": 294.68729424476624,
+      "final_win_rate": 90.26666666666667,
+      "final_draw_rate": 3.3333333333333335,
+      "final_loss_rate": 6.3999999999999995,
+      "eval_games": 1000,
+      "eval_seeds": 3,
+      "eval_robustness": {
+        "win_rate_std": 0.8730533902472503,
+        "win_rate_min": 89.60000000000001,
+        "win_rate_max": 91.5,
+        "seed_results": [
+          {
+            "seed": 42,
+            "wins": 896,
+            "losses": 66,
+            "draws": 38,
+            "num_games": 1000,
+            "win_rate": 89.60000000000001,
+            "loss_rate": 6.6000000000000005,
+            "draw_rate": 3.8,
+            "duration": 80.63117408752441
+          },
+          {
+            "seed": 43,
+            "wins": 897,
+            "losses": 63,
+            "draws": 40,
+            "num_games": 1000,
+            "win_rate": 89.7,
+            "loss_rate": 6.3,
+            "draw_rate": 4.0,
+            "duration": 97.41268992424011
+          },
+          {
+            "seed": 44,
+            "wins": 915,
+            "losses": 63,
+            "draws": 22,
+            "num_games": 1000,
+            "win_rate": 91.5,
+            "loss_rate": 6.3,
+            "draw_rate": 2.1999999999999997,
+            "duration": 103.21297264099121
+          }
+        ]
+      },
+      "training_stats": {
+        "train_win_rate": 77.86,
+        "train_draw_rate": 5.58,
+        "train_loss_rate": 16.56,
+        "avg_reward": 0.613,
+        "avg_moves": 6.5747
+      },
+      "hyperparameters": {
+        "alpha": 0.2,
+        "gamma": 0.99,
+        "epsilon_start": 1.0,
+        "epsilon_final": 0.01,
+        "epsilon_min": 0.01,
+        "epsilon_decay": 0.9995
+      },
+      "performance": {
+        "states_learned": 3910,
+        "avg_reward": 0.613,
+        "avg_moves": 6.5747
+      },
+      "metrics_source": "evaluation",
+      "eval_epsilon": 0.0
+    },
+    "final_win_rate": 90.26666666666667,
+    "final_draw_rate": 3.3333333333333335,
+    "final_loss_rate": 6.3999999999999995,
+    "total_episodes": 10000
   }
 }

@@ -919,7 +919,7 @@ class GameGUI:
                 
                 pygame.draw.circle(
                     self.screen,
-                    self.assets.colors.ACCENT_COLOR,
+                    self.assets.colors.ACCENT,
                     (highlight_x, highlight_y),
                     70,
                     4

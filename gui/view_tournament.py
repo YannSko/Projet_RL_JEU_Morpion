@@ -335,7 +335,7 @@ class TournamentView:
                         f"{rating:.0f}",
                         (615, y_offset),
                         font_size='tiny',
-                        color=self.assets.colors.ACCENT_COLOR
+                        color=self.assets.colors.ACCENT
                     )
                     
                     y_offset += 25

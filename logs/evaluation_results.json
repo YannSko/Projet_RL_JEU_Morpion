@@ -658,5 +658,137 @@
       "gamma": 0.99
     },
     "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-16T10:41:33.609161",
+    "num_games": 500,
+    "wins": 389,
+    "losses": 78,
+    "draws": 33,
+    "win_rate": 77.8,
+    "loss_rate": 15.6,
+    "draw_rate": 6.6000000000000005,
+    "agent_config": {
+      "total_states": 3231,
+      "total_state_actions": 11848,
+      "avg_q_value": 0.009386247333103148,
+      "max_q_value": 0.9990773992449105,
+      "min_q_value": -0.47799375,
+      "std_q_value": 0.12806560236541287,
+      "epsilon": 0.0820336944319021,
+      "alpha": 0.15,
+      "gamma": 0.92
+    },
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-16T10:54:10.521116",
+    "num_games": 1000,
+    "wins": 861,
+    "losses": 106,
+    "draws": 33,
+    "win_rate": 86.1,
+    "loss_rate": 10.6,
+    "draw_rate": 3.3000000000000003,
+    "agent_config": {
+      "total_states": 3235,
+      "total_state_actions": 11892,
+      "avg_q_value": 0.010100131266272292,
+      "max_q_value": 0.9998183635258976,
+      "min_q_value": -0.47799375,
+      "std_q_value": 0.12764153009710777,
+      "epsilon": 0.0820336944319021,
+      "alpha": 0.15,
+      "gamma": 0.92
+    },
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-16T11:22:22.652682",
+    "num_games": 3000,
+    "wins": 2708,
+    "losses": 192,
+    "draws": 100,
+    "win_rate": 90.26666666666667,
+    "loss_rate": 6.4,
+    "draw_rate": 3.3333333333333335,
+    "agent_config": {
+      "total_states": 3910,
+      "total_state_actions": 14142,
+      "avg_q_value": 0.026308488431353316,
+      "max_q_value": 0.9999999999999998,
+      "min_q_value": -0.8390108159999999,
+      "std_q_value": 0.22033203244073676,
+      "epsilon": 0.01,
+      "alpha": 0.2,
+      "gamma": 0.99
+    },
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-16T11:22:34.657014",
+    "num_games": 100,
+    "wins": 91,
+    "losses": 3,
+    "draws": 6,
+    "win_rate": 91.0,
+    "loss_rate": 3.0,
+    "draw_rate": 6.0,
+    "agent_config": {
+      "total_states": 3910,
+      "total_state_actions": 14142,
+      "avg_q_value": 0.026308488431353316,
+      "max_q_value": 0.9999999999999998,
+      "min_q_value": -0.8390108159999999,
+      "std_q_value": 0.22033203244073676,
+      "epsilon": 0.01,
+      "alpha": 0.2,
+      "gamma": 0.99
+    },
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-16T11:49:39.833027",
+    "num_games": 3000,
+    "wins": 2755,
+    "losses": 169,
+    "draws": 76,
+    "win_rate": 91.83333333333333,
+    "loss_rate": 5.633333333333333,
+    "draw_rate": 2.533333333333333,
+    "agent_config": {
+      "total_states": 4205,
+      "total_state_actions": 15135,
+      "avg_q_value": 0.03280941495227152,
+      "max_q_value": 0.9999999999999998,
+      "min_q_value": -0.9979448261066552,
+      "std_q_value": 0.29920882171721463,
+      "epsilon": 0.01,
+      "alpha": 0.2,
+      "gamma": 0.99
+    },
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-01-16T11:49:53.011154",
+    "num_games": 100,
+    "wins": 88,
+    "losses": 10,
+    "draws": 2,
+    "win_rate": 88.0,
+    "loss_rate": 10.0,
+    "draw_rate": 2.0,
+    "agent_config": {
+      "total_states": 4205,
+      "total_state_actions": 15135,
+      "avg_q_value": 0.03280941495227152,
+      "max_q_value": 0.9999999999999998,
+      "min_q_value": -0.9979448261066552,
+      "std_q_value": 0.29920882171721463,
+      "epsilon": 0.01,
+      "alpha": 0.2,
+      "gamma": 0.99
+    },
+    "metadata": {}
   }
 ]
