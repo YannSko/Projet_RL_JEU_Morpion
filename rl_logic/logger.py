@@ -347,23 +347,33 @@ class RLLogger:
     
     def _save_training_stats(self):
         """Sauvegarde les stats d'entraînement en CSV"""
+        if not self.training_stats:
+            return
+        
         try:
-            if not self.training_stats:
-                return
+            # Supprimer le fichier s'il est corrompu
+            if self.training_file.exists():
+                try:
+                    # Tenter de supprimer si corrompu
+                    self.training_file.unlink()
+                except:
+                    pass
             
+            # Créer un nouveau fichier
             with open(self.training_file, 'w', newline='', encoding='utf-8') as f:
-                fieldnames = self.training_stats[0].keys()
+                fieldnames = list(self.training_stats[0].keys())
                 writer = csv.DictWriter(f, fieldnames=fieldnames)
                 writer.writeheader()
                 writer.writerows(self.training_stats)
-        except PermissionError:
-            # Fichier ouvert dans Excel ou verrouillé - ignorer silencieusement
+        except (PermissionError, OSError):
+            # Fichier verrouillé ou problème d'accès - ignorer silencieusement
             pass
         except Exception as e:
             # Afficher l'erreur seulement une fois
             if not hasattr(self, '_stats_error_shown'):
-                print(f"⚠️ Impossible de sauvegarder training_stats.csv: {e}")
-                print("   (Vérifiez que le fichier n'est pas ouvert dans Excel)")
+                print(f"⚠️ Statistiques d'entraînement non sauvegardées")
+                print(f"   Raison: {type(e).__name__}")
+                print(f"   Solution: Fermez {self.training_file.name} s'il est ouvert")
                 self._stats_error_shown = True
     
     def _save_evaluation(self):
